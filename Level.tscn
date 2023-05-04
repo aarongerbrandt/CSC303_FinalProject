@@ -1,11 +1,12 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/Generation.gd" type="Script" id=1]
-[ext_resource path="res://Scripts/FreeLookCamera.gd" type="Script" id=2]
+[ext_resource path="res://Util/FreeLookCamera.tscn" type="PackedScene" id=2]
 
-[node name="Spatial" type="Spatial"]
+[node name="LevelGenerator" type="Spatial"]
 script = ExtResource( 1 )
+number_of_rooms = 50
 
-[node name="Camera" type="Camera" parent="."]
-far = 8192.0
-script = ExtResource( 2 )
+[node name="Rooms" type="Spatial" parent="."]
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]

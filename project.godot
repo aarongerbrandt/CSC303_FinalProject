@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "FreeLookCamera",
 "language": "GDScript",
-"path": "res://Scripts/FreeLookCamera.gd"
+"path": "res://Util/FreeLookCamera.gd"
 } ]
 _global_script_class_icons={
 "FreeLookCamera": ""
