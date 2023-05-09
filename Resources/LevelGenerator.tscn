@@ -1,11 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Resources/LevelGenerator.gd" type="Script" id=1]
+[ext_resource path="res://Resources/RoomGenerator.tscn" type="PackedScene" id=2]
 
 [node name="LevelGenerator" type="Spatial"]
 script = ExtResource( 1 )
 time_to_room_stop = 3.0
-spread_magnitude = 2.0
 room_placement_radius = 500
 
-[node name="Rooms" type="Spatial" parent="."]
+[node name="RoomGenerator" parent="." instance=ExtResource( 2 )]
+
+[node name="Lines" type="Spatial" parent="."]

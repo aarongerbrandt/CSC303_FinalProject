@@ -1,11 +1,10 @@
 extends Spatial
 
 export(float) var time_to_room_stop = 10
-export(float, 0, 2) var spread_magnitude = 0.25
 export(int) var number_of_rooms = 25
 export(int) var room_placement_radius = 30
-export(int, 1, 30) var min_room_size = 15
-export(int, 31, 75) var max_room_size = 20
+
+onready var room_generator = $RoomGenerator
 
 # const Delaunator = preload("res://Resources/Scripts/Delaunator.gd")
 const Line3D = preload("res://Resources/Scripts/Line3D.gd")
@@ -23,7 +22,7 @@ func generate():
 		place_room(room_position)
 	
 	yield(get_tree().create_timer(time_to_room_stop), "timeout")
-	_stop_rooms()
+	room_generator.stop_rooms(points)
 	
 	var path = generateMST()
 	
@@ -34,28 +33,11 @@ func generate():
 				connected_points.append(path.get_point_position(cp))
 			for cp in path.get_point_connections(c):
 				connected_points.append(path.get_point_position(cp))
-			add_child(Line3D.DrawLine(connected_points))
+			room_generator.add_bridges(points)
+			$Lines.add_child(Line3D.DrawLine(connected_points))
 
 func place_room(room_position: Vector3) -> void:
-	var room_dimensions = Vector3(
-		rand_range(min_room_size, max_room_size),
-		rand_range(min_room_size, max_room_size),
-		rand_range(min_room_size, max_room_size)
-	)
-	
-	var room = Room1.instance()
-	room.load_position(room_position, room_dimensions)
-	$Rooms.add_child(room)
-
-func _stop_rooms():
-	for room in $Rooms.get_children():
-		if room:
-			# After spreading apart, amplify their distance by a certain threshold
-			room.spread(spread_magnitude)
-			
-			room.mode = RigidBody.MODE_STATIC
-			points.append(room.get_center()) # Util.v3_to_v2(room.get_center())
-
+	room_generator.generate_room(room_position)
 
 func generateMST() -> AStar:
 	# Create copy of list of points

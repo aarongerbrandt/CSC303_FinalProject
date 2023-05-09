@@ -1,4 +1,5 @@
 extends RigidBody
+class_name Room1
 
 export (Color) var room_color = Color.red
 export (Color) var collision_color = Color.blue

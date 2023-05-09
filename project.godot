@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Resources/Scripts/Line3D.gd"
 }, {
+"base": "RigidBody",
+"class": "Room1",
+"language": "GDScript",
+"path": "res://Resources/Rooms/Room1.gd"
+}, {
 "base": "Node",
 "class": "Util",
 "language": "GDScript",
@@ -33,6 +38,7 @@ _global_script_class_icons={
 "Delaunator": "",
 "FreeLookCamera": "",
 "Line3D": "",
+"Room1": "",
 "Util": ""
 }
 

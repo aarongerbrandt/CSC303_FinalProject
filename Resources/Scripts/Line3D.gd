@@ -10,7 +10,20 @@ static func DrawLine(points: Array):
 	var path = Path.new()
 	path.name = "path"
 	for p in points:
+		#print("Point: %s" % str(p))
+		
 		path.curve.add_point(p)	
+		var csg = CSGBox.new()
+		csg.width = 50
+		csg.height = 50
+		csg.depth = 50
+		csg.global_translation = p
+	
+		var material = SpatialMaterial.new()
+		material.albedo_color = Color.green
+		
+		csg.material = material
+		line.add_child(csg)
 	
 	var csg = CSGPolygon.new()
 	csg.polygon.resize(0)
