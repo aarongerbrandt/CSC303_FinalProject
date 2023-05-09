@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Resources/LevelGenerator.gd" type="Script" id=1]
+
+[node name="LevelGenerator" type="Spatial"]
+script = ExtResource( 1 )
+time_to_room_stop = 3.0
+spread_magnitude = 2.0
+room_placement_radius = 500
+
+[node name="Rooms" type="Spatial" parent="."]

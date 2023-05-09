@@ -10,18 +10,36 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Reference",
+"class": "Delaunator",
+"language": "GDScript",
+"path": "res://Resources/Scripts/Delaunator.gd"
+}, {
+"base": "Camera",
 "class": "FreeLookCamera",
 "language": "GDScript",
 "path": "res://Util/FreeLookCamera.gd"
+}, {
+"base": "Node2D",
+"class": "Line3D",
+"language": "GDScript",
+"path": "res://Resources/Scripts/Line3D.gd"
+}, {
+"base": "Node",
+"class": "Util",
+"language": "GDScript",
+"path": "res://Resources/Scripts/GeneratorUtil.gd"
 } ]
 _global_script_class_icons={
-"FreeLookCamera": ""
+"Delaunator": "",
+"FreeLookCamera": "",
+"Line3D": "",
+"Util": ""
 }
 
 [application]
 
 config/name="NewGenAttempt"
-run/main_scene="res://Level.tscn"
+run/main_scene="res://TestLevel.tscn"
 config/icon="res://icon.png"
 
 [gui]
