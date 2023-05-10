@@ -8,6 +8,7 @@ const ALT_MULTIPLIER = 1.0 / SHIFT_MULTIPLIER
 export(int, 1.0) var sensitivity: float = 0.25
 export(float, 20.0, 100.0) var max_speed: float = 50.0
 export(float, 0.0, 10.0) var min_speed: float = 0.2
+export(float) var default_speed = 10
 
 # Mouse state
 var _mouse_position = Vector2(0.0, 0.0)
@@ -18,7 +19,7 @@ var _direction = Vector3(0.0, 0.0, 0.0)
 var _velocity = Vector3(0.0, 0.0, 0.0)
 var _acceleration = 30
 var _deceleration = -10
-var _vel_multiplier = 4
+var _vel_multiplier = default_speed
 
 # Keyboard state
 var _w = false

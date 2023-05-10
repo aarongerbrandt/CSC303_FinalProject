@@ -26,15 +26,26 @@ func generate():
 	
 	var path = generateMST()
 	
+	var bridge_connections = []
+	
+	# Maybe use a map to map points to connections?
 	for p in path.get_points():
 		for c in path.get_point_connections(p):
 			var connected_points = []
-			for cp in path.get_point_connections(p):
-				connected_points.append(path.get_point_position(cp))
-			for cp in path.get_point_connections(c):
-				connected_points.append(path.get_point_position(cp))
-			room_generator.add_bridges(points)
+			var connection = PoolVector3Array()
+#			var connection2 = PoolVector3Array()
+			for p_conn in path.get_point_connections(p):
+				var point = path.get_point_position(p_conn)
+				connection.append(point)
+				connected_points.append(point)
+			for c_conn in path.get_point_connections(c):
+				var point = path.get_point_position(c_conn)
+				connection.append(point)
+				connected_points.append(point)
+			bridge_connections.append(connection)
 			$Lines.add_child(Line3D.DrawLine(connected_points))
+	
+	room_generator.build_bridges(bridge_connections)
 
 func place_room(room_position: Vector3) -> void:
 	room_generator.generate_room(room_position)

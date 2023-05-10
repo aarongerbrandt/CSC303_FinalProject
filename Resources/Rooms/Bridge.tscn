@@ -7,7 +7,7 @@ albedo_color = Color( 0.0823529, 0.54902, 0.423529, 1 )
 
 [sub_resource type="PlaneMesh" id=1]
 material = SubResource( 2 )
-size = Vector2( 8, 2 )
+size = Vector2( 8, 8 )
 
 [node name="Bridge" type="StaticBody"]
 script = ExtResource( 1 )

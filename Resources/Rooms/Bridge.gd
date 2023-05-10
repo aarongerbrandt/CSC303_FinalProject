@@ -1,5 +1,7 @@
 extends StaticBody
 
+export(float, 0, 100, 0.5) var bridge_width = 30
+
 var origin: Vector3
 
 func init(p1: Vector3, p2: Vector3) -> void:
@@ -15,5 +17,5 @@ func init(p1: Vector3, p2: Vector3) -> void:
 	
 	$MeshInstance.mesh.size = Vector2(
 		p1.distance_to(p2),
-		30
+		bridge_width
 	)
