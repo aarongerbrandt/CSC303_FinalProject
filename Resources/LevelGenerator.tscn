@@ -6,7 +6,6 @@
 [node name="LevelGenerator" type="Spatial"]
 script = ExtResource( 1 )
 time_to_room_stop = 3.0
-room_placement_radius = 500
 
 [node name="RoomGenerator" parent="." instance=ExtResource( 2 )]
 

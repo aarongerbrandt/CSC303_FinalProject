@@ -2,7 +2,7 @@ extends Spatial
 
 export(float) var time_to_room_stop = 10
 export(int) var number_of_rooms = 25
-export(int) var room_placement_radius = 30
+export(int) var room_placement_radius = 300
 
 onready var room_generator = $RoomGenerator
 
@@ -15,6 +15,10 @@ const TILE_SIZE = 4
 
 var points = []
 
+func clear():
+	print("Clearing Level Generator")
+	$RoomGenerator.clear()
+
 func generate():
 	randomize()
 	for i in range(number_of_rooms):
@@ -22,7 +26,7 @@ func generate():
 		place_room(room_position)
 	
 	yield(get_tree().create_timer(time_to_room_stop), "timeout")
-	room_generator.stop_rooms(points)
+	points = room_generator.stop_rooms()
 	
 	var path = generateMST()
 	
@@ -33,8 +37,8 @@ func generate():
 				connected_points.append(path.get_point_position(cp))
 			for cp in path.get_point_connections(c):
 				connected_points.append(path.get_point_position(cp))
-			room_generator.add_bridges(points)
-			$Lines.add_child(Line3D.DrawLine(connected_points))
+			room_generator.add_bridges(connected_points)
+#			$Lines.add_child(Line3D.DrawLine(connected_points))
 
 func place_room(room_position: Vector3) -> void:
 	room_generator.generate_room(room_position)

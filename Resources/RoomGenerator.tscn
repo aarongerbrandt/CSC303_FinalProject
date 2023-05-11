@@ -6,6 +6,8 @@
 script = ExtResource( 1 )
 min_room_size = 30
 max_room_size = 75
+spread_magnitude = 5.0
+height_variation = 0
 
 [node name="Rooms" type="Spatial" parent="."]
 

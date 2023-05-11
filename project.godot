@@ -45,7 +45,7 @@ _global_script_class_icons={
 [application]
 
 config/name="NewGenAttempt"
-run/main_scene="res://3DPointTest.tscn"
+run/main_scene="res://TestLevel.tscn"
 config/icon="res://icon.png"
 
 [gui]
