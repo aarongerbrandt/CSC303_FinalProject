@@ -10,4 +10,4 @@ func build_bridge(p1:Vector3, p2:Vector3):
 	var midpoint = (p1 + p2) / 2
 	look_at_from_position(midpoint, p1, Vector3.UP)
 	var length = (p1 - p2).length()
-	set_scale(Vector3(1,1,length / 2))
+	$MeshInstance.mesh.size = Vector3(2,2,length)
