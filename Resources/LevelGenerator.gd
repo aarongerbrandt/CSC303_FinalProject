@@ -3,6 +3,7 @@ extends Spatial
 export(float) var time_to_room_stop = 10
 export(int) var number_of_rooms = 25
 export(int) var room_placement_radius = 300
+export(float) var spread_magnitude = 2
 
 onready var room_generator = $RoomGenerator
 
@@ -26,7 +27,7 @@ func generate():
 		place_room(room_position)
 	
 	yield(get_tree().create_timer(time_to_room_stop), "timeout")
-	points = room_generator.stop_rooms()
+	points = room_generator.stop_rooms(spread_magnitude)
 	
 	var path = generateMST()
 	

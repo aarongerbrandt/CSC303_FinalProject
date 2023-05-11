@@ -33,7 +33,7 @@ func generate_room(room_position: Vector3) -> void:
 	room.load_position(room_position, room_dimensions)
 	$Rooms.add_child(room)
 
-func stop_rooms() -> Array:
+func stop_rooms(spread_magnitude: float) -> Array:
 	var room_positions = []
 	for room in $Rooms.get_children():
 		if room:
@@ -47,14 +47,13 @@ func stop_rooms() -> Array:
 			room_positions.append(room.get_center()) # Util.v3_to_v2(room.get_center())
 	return room_positions
 
+# Given an array of points, creates bridges from one point to the next
+#		i.e. [p1, p2, p3] creates a bridge from p1 to p2, and p2 to p3
 func add_bridges(points: Array) -> void:
 #	print(points)
 	for i in range(points.size() - 1):
 		var p1 = points[i]
 		var p2 = points[i + 1]
-		
-		var s_p1 = JSON.print(p1)
-		var s_p2 = JSON.print(p2)
 		
 		if !_bridge_connections.has(p1):
 			_bridge_connections[p1] = [p2]
