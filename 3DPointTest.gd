@@ -2,7 +2,7 @@ extends Spatial
 
 export(Vector3) var p1 = Vector3(1, 0, 1)
 export(Color) var p1_color = Color.cornflower
-export(Vector3) var p2 = Vector3(8, 8, 8)
+export(Vector3) var p2 = Vector3(8, 0, 8)
 export(Color) var p2_color = Color.coral
 
 export(Color) var bridge_color = Color.rebeccapurple
@@ -15,6 +15,7 @@ func _ready():
 	drawBridge(p1, p2)
 
 func showPoints():
+	# Create CSG Boxes to show where the points are
 	var csg1 = CSGBox.new()
 	add_child(csg1)
 	var csg2 = CSGBox.new()
@@ -71,15 +72,17 @@ func drawBridge(p1: Vector3, p2: Vector3) -> void:
 	bridgeMaterial.albedo_color = bridge_color
 	cubeMesh.material = bridgeMaterial
 	
-	cubeMesh.size = Vector3(distance, 2, 2)
+	cubeMesh.size = Vector3(2, 2, distance)
 	
 	meshInstance.mesh = cubeMesh
 	meshInstance.create_convex_collision(true, true)
 	
 	print("angle: %.2f" % vertical_angle)
-	staticBody.global_translation = midpoint
 	print(distance)
 	print(midpoint)
 	
-	staticBody.transform = staticBody.transform.rotated(Vector3.DOWN, angle)
-	staticBody.transform = staticBody.transform.rotated(Vector3.LEFT, vertical_angle)
+	staticBody.look_at_from_position(p1, p2, Vector3(0, 1, 0))
+	staticBody.global_translation = midpoint
+	
+#	staticBody.transform = staticBody.transform.rotated(Vector3.DOWN, angle)
+#	staticBody.transform = staticBody.transform.rotated(Vector3.LEFT, vertical_angle)
