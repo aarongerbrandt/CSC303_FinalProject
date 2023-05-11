@@ -8,3 +8,5 @@ script = ExtResource( 1 )
 [node name="CollisionShape" type="CollisionShape" parent="."]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
+
+[node name="Segments" type="Spatial" parent="."]

@@ -8,6 +8,8 @@
 script = ExtResource( 3 )
 
 [node name="LevelGenerator" parent="." instance=ExtResource( 2 )]
+number_of_rooms = 10
+room_placement_radius = 1500
 
 [node name="Camera" parent="." instance=ExtResource( 1 )]
 max_speed = 75.0

@@ -9,8 +9,11 @@ var midpoint: Vector3
 
 var length: float
 
+const BridgeSegment = preload("res://Resources/DungeonSegments/BridgeSegment.tscn")
+
+# TODO: Might be being called twice, just with p1 and p2 switched
 func init(point_one: Vector3, point_two: Vector3) -> void:
-	_create_bridge_materials()
+#	_create_bridge_materials()
 	
 	p1 = point_one
 	p2 = point_two
@@ -19,7 +22,27 @@ func init(point_one: Vector3, point_two: Vector3) -> void:
 	look_at_from_position(midpoint, p2, Vector3.UP)
 	
 	length = p1.distance_to(p2)
-	$MeshInstance.mesh.size = Vector3(bridge_width, bridge_height, length)
+#	$MeshInstance.mesh.size = Vector3(bridge_width, bridge_height, length)
+	
+	_place_segments()
+
+func _place_segments(): # length of 35
+#	print("Placing segments!")
+	var segment_length = BridgeSegment.instance().dimensions.z
+	var num_segments = ceil(length / segment_length)
+	
+	var stretched_segment_length = length / num_segments
+	var segment_scale = stretched_segment_length / segment_length
+	
+	for i in range(num_segments):
+		var segment = BridgeSegment.instance()
+		$Segments.add_child(segment)
+		
+		var segment_location = p1.move_toward(p2, segment_length * i)
+		
+		segment.global_translation = segment_location
+		segment.scale = Vector3(segment.scale.x, segment.scale.y, segment.scale.z * segment_scale)
+	print("\n-----------------------------------------\n")
 
 func _create_bridge_materials():
 	var mesh_mat = SpatialMaterial.new()

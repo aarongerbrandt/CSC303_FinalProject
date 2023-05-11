@@ -9,6 +9,8 @@ export(Color) var bridge_color = Color.rebeccapurple
 
 export(Vector3) var rotation_axis = Vector3.ONE
 
+const Bridge = preload("res://Resources/Rooms/Bridge.tscn")
+
 func _ready():
 	showPoints()
 	
@@ -40,38 +42,7 @@ func showPoints():
 	csg2.height = 2
 	csg2.depth = 2
 
-func _get_distance(p1: Vector3, p2: Vector3) -> float:
-	return p1.distance_to(p2)
-
-func _get_angle(p1: Vector3, p2: Vector3) -> float:
-	return p1.angle_to(p2)
-
-func _get_vertical_angle(p1: Vector3, p2: Vector3) -> float:
-	var a = sqrt((p1.z * p1.z) + (p1.x * p1.x))
-	var c = p1.distance_to(p2)
-	
-	return cos(a / c)
-
-func _get_midpoint(p1: Vector3, p2: Vector3) -> Vector3:
-	return (p1 + p2) / 2
-
 func drawBridge(p1: Vector3, p2: Vector3) -> void:
-	var meshInstance = MeshInstance.new()
-	var cubeMesh = CubeMesh.new()
-	
-	var staticBody = StaticBody.new()
-	staticBody.add_child(meshInstance)
-	add_child(staticBody)
-	
-	var distance = _get_distance(p1, p2)
-	var angle = _get_angle(p1, p2)
-	var vertical_angle = _get_vertical_angle(p1, p2)
-	var midpoint = _get_midpoint(p1, p2)
-	
-	var bridgeMaterial = SpatialMaterial.new()
-	bridgeMaterial.albedo_color = bridge_color
-	cubeMesh.material = bridgeMaterial
-	
-	cubeMesh.size = Vector3(2, 2, distance)
-	meshInstance.mesh = cubeMesh
-	staticBody.look_at_from_position(midpoint, p2, Vector3.UP)
+	var bridge = Bridge.instance()
+	add_child(bridge)
+	bridge.init(p1, p2)
