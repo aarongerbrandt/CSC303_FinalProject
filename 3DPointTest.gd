@@ -55,31 +55,32 @@ func _get_midpoint(p1: Vector3, p2: Vector3) -> Vector3:
 	return (p1 + p2) / 2
 
 func drawBridge(p1: Vector3, p2: Vector3) -> void:
-	var meshInstance = MeshInstance.new()
-	var cubeMesh = CubeMesh.new()
-	
-	var staticBody = StaticBody.new()
-	staticBody.add_child(meshInstance)
-	add_child(staticBody)
-	
-	var distance = _get_distance(p1, p2)
-	var angle = _get_angle(p1, p2)
-	var vertical_angle = _get_vertical_angle(p1, p2)
-	var midpoint = _get_midpoint(p1, p2)
-	
-	var bridgeMaterial = SpatialMaterial.new()
-	bridgeMaterial.albedo_color = bridge_color
-	cubeMesh.material = bridgeMaterial
-	
-	cubeMesh.size = Vector3(distance, 2, 2)
-	
-	meshInstance.mesh = cubeMesh
-	meshInstance.create_convex_collision(true, true)
-	
-	print("angle: %.2f" % vertical_angle)
-	staticBody.global_translation = midpoint
-	print(distance)
-	print(midpoint)
-	
-	staticBody.transform = staticBody.transform.rotated(Vector3.DOWN, angle)
-	staticBody.transform = staticBody.transform.rotated(Vector3.LEFT, vertical_angle)
+	$Bridge.build_bridge(p1, p2)
+#	var meshInstance = MeshInstance.new()
+#	var cubeMesh = CubeMesh.new()
+#
+#	var staticBody = StaticBody.new()
+#	staticBody.add_child(meshInstance)
+#	add_child(staticBody)
+#
+#	var distance = _get_distance(p1, p2)
+#	var angle = _get_angle(p1, p2)
+#	var vertical_angle = _get_vertical_angle(p1, p2)
+#	var midpoint = _get_midpoint(p1, p2)
+#
+#	var bridgeMaterial = SpatialMaterial.new()
+#	bridgeMaterial.albedo_color = bridge_color
+#	cubeMesh.material = bridgeMaterial
+#
+#	cubeMesh.size = Vector3(distance, 2, 2)
+#
+#	meshInstance.mesh = cubeMesh
+#	meshInstance.create_convex_collision(true, true)
+#
+#	print("angle: %.2f" % vertical_angle)
+#	staticBody.global_translation = midpoint
+#	print(distance)
+#	print(midpoint)
+#
+#	staticBody.transform = staticBody.transform.rotated(Vector3.DOWN, angle)
+#	staticBody.transform = staticBody.transform.rotated(Vector3.LEFT, vertical_angle)
