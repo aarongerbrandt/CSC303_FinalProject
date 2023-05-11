@@ -23,12 +23,3 @@ static func getRandom3DPointInCircle(radius: float, tile_size: float) -> Vector3
 	var z = _round(radius * r * sin(t), tile_size)
 	
 	return Vector3(x, 0, z)
-
-static func getRandomPoint(radius: float, tile_size: float) -> Vector3:
-	var angle = rand_range(0, 2 * PI)
-	var distance = rand_range(0, radius)
-	
-	var x = distance * cos(angle)
-	var z = distance * sin(angle)
-	
-	return Vector3.ONE

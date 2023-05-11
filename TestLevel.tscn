@@ -1,15 +1,14 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Util/FreeLookCamera.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Resources/LevelGenerator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Resources/Generation/LevelGenerator.tscn" type="PackedScene" id=2]
 [ext_resource path="res://TestLevel.gd" type="Script" id=3]
 
 [node name="Spatial" type="Spatial"]
 script = ExtResource( 3 )
 
 [node name="LevelGenerator" parent="." instance=ExtResource( 2 )]
-number_of_rooms = 10
-room_placement_radius = 1500
+number_of_rooms = 3
 
 [node name="Camera" parent="." instance=ExtResource( 1 )]
 max_speed = 75.0

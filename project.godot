@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "RigidBody",
+"class": "Base_Room",
+"language": "GDScript",
+"path": "res://Resources/Rooms/BaseRoom.gd"
+}, {
 "base": "Reference",
 "class": "Delaunator",
 "language": "GDScript",
@@ -24,7 +29,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Resources/Scripts/Line3D.gd"
 }, {
-"base": "RigidBody",
+"base": "Base_Room",
 "class": "Room1",
 "language": "GDScript",
 "path": "res://Resources/Rooms/Room1.gd"
@@ -35,6 +40,7 @@ _global_script_classes=[ {
 "path": "res://Resources/Scripts/GeneratorUtil.gd"
 } ]
 _global_script_class_icons={
+"Base_Room": "",
 "Delaunator": "",
 "FreeLookCamera": "",
 "Line3D": "",

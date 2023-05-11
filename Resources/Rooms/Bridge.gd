@@ -42,7 +42,6 @@ func _place_segments(): # length of 35
 		
 		segment.global_translation = segment_location
 		segment.scale = Vector3(segment.scale.x, segment.scale.y, segment.scale.z * segment_scale)
-	print("\n-----------------------------------------\n")
 
 func _create_bridge_materials():
 	var mesh_mat = SpatialMaterial.new()

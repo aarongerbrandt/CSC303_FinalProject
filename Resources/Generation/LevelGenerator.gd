@@ -24,12 +24,12 @@ func generate():
 	randomize()
 	for i in range(number_of_rooms):
 		var room_position = Util.getRandom3DPointInCircle(room_placement_radius, TILE_SIZE)
-		place_room(room_position)
+		_place_room(room_position)
 	
 	yield(get_tree().create_timer(time_to_room_stop), "timeout")
 	points = room_generator.stop_rooms(spread_magnitude)
 	
-	var path = generateMST()
+	var path = _generate_MST()
 	
 	for p in path.get_points():
 		for c in path.get_point_connections(p):
@@ -39,12 +39,11 @@ func generate():
 			for cp in path.get_point_connections(c):
 				connected_points.append(path.get_point_position(cp))
 			room_generator.add_bridges(connected_points)
-#			$Lines.add_child(Line3D.DrawLine(connected_points))
 
-func place_room(room_position: Vector3) -> void:
+func _place_room(room_position: Vector3) -> void:
 	room_generator.generate_room(room_position)
 
-func generateMST() -> AStar:
+func _generate_MST() -> AStar:
 	# Create copy of list of points
 	var nodes = points.duplicate()
 	
