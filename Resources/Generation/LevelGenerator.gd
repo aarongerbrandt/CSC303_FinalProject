@@ -34,7 +34,7 @@ func generate():
 	yield(get_tree().create_timer(time_to_room_stop), "timeout")
 	points = room_generator.stop_rooms(spread_magnitude)
 	
-	var player_pos = points[randi() % points.size()] + Vector3(0, 1, 0)
+	var player_pos = points[randi() % points.size()] + Vector3(0, 15, 0)
 	emit_signal("level_generated", player_pos)
 	
 	var path = _generate_MST()

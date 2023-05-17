@@ -5,7 +5,7 @@ export(int) var max_spawn_time_seconds = 20
 export(int) var min_enemies_in_wave = 1
 export(int) var max_enemies_in_wave = 5
 
-export(float) var spawn_radius = 50
+export(float) var spawn_radius = 600
 
 var player = null
 
@@ -23,17 +23,18 @@ func _get_random_time() -> int:
 
 func init(target):
 	player = target
-	spawn_timer.start()
+	spawn_timer.start(_get_random_time())
 
 func _on_SpawnTimer_timeout():
 	spawn_wave()
+	spawn_timer.start(_get_random_time())
 
 func spawn_wave():
 	var num_enemies_in_wave = round(rand_range(min_enemies_in_wave, max_enemies_in_wave))
-	
+	print("Spawning %d enemies" % num_enemies_in_wave)
 	for i in range(num_enemies_in_wave):
 		var spawn_pos = Util.getRandom3DPointInCircle(spawn_radius, 1) + Vector3(0, 100, 0)
-		var ghost = Ghost.instance()
+		var ghost = preload("res://Resources/Entities/Enemies/Ghost.tscn").instance()
 		ghosts.add_child(ghost)
 		
 		ghost.init(player, spawn_pos)
