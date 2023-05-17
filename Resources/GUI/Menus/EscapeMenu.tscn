@@ -3,6 +3,8 @@
 [ext_resource path="res://Resources/GUI/Menus/EscapeMenu.gd" type="Script" id=1]
 
 [node name="EscapeMenu" type="Control"]
+pause_mode = 2
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
@@ -33,3 +35,7 @@ text = "Resume"
 margin_top = 24.0
 margin_right = 64.0
 margin_bottom = 44.0
+text = "Exit"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_ResumeButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ExitButton" to="." method="_on_ExitButton_pressed"]

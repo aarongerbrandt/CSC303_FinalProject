@@ -34,7 +34,7 @@ func spawn_wave():
 	print("Spawning %d enemies" % num_enemies_in_wave)
 	for i in range(num_enemies_in_wave):
 		var spawn_pos = Util.getRandom3DPointInCircle(spawn_radius, 1) + Vector3(0, 100, 0)
-		var ghost = preload("res://Resources/Entities/Enemies/Ghost.tscn").instance()
+		var ghost = Ghost.instance()
 		ghosts.add_child(ghost)
 		
 		ghost.init(player, spawn_pos)

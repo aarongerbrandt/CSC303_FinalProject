@@ -20,7 +20,3 @@ func _input(event):
 	
 	if event.is_action_pressed("player_action"):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	elif event.is_action_pressed("escape"):
-		get_tree().paused = true
-		$EscapeMenu.show_modal(true)
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

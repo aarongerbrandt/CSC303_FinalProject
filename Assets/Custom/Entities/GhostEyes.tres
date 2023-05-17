@@ -1,0 +1,15 @@
+[gd_resource type="SphereMesh" load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 1, 0, 0, 1 )
+emission_enabled = true
+emission = Color( 0.909804, 0.0627451, 0.0627451, 1 )
+emission_energy = 0.5
+emission_operator = 0
+emission_on_uv2 = false
+
+[resource]
+material = SubResource( 1 )
+radius = 0.25
+height = 0.5
+rings = 2

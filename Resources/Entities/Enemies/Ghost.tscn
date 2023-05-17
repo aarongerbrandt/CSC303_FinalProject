@@ -1,17 +1,19 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Resources/Entities/Enemies/Ghost.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Custom/Entities/GhostEyes.tres" type="SphereMesh" id=2]
 
 [sub_resource type="SphereShape" id=2]
+radius = 4.0
 
-[sub_resource type="SpatialMaterial" id=3]
+[sub_resource type="SpatialMaterial" id=17]
 flags_transparent = true
 albedo_color = Color( 0.858824, 0.941176, 0.972549, 0.8 )
 
-[sub_resource type="SphereMesh" id=1]
-material = SubResource( 3 )
+[sub_resource type="SphereMesh" id=14]
+material = SubResource( 17 )
 
-[sub_resource type="SpatialMaterial" id=4]
+[sub_resource type="SpatialMaterial" id=16]
 albedo_color = Color( 1, 0, 0, 1 )
 emission_enabled = true
 emission = Color( 0.909804, 0.0627451, 0.0627451, 1 )
@@ -19,8 +21,8 @@ emission_energy = 0.5
 emission_operator = 0
 emission_on_uv2 = false
 
-[sub_resource type="SphereMesh" id=5]
-material = SubResource( 4 )
+[sub_resource type="SphereMesh" id=15]
+material = SubResource( 16 )
 radius = 0.25
 height = 0.5
 rings = 2
@@ -29,7 +31,7 @@ rings = 2
 flags_transparent = true
 albedo_color = Color( 0.921569, 0.494118, 0.494118, 0.368627 )
 
-[sub_resource type="SphereMesh" id=6]
+[sub_resource type="SphereMesh" id=11]
 material = SubResource( 7 )
 radius = 34.945
 
@@ -46,10 +48,10 @@ shape = SubResource( 2 )
 autostart = true
 
 [node name="Body" type="Spatial" parent="."]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
 
 [node name="MainBody" type="MeshInstance" parent="Body"]
-mesh = SubResource( 1 )
+mesh = SubResource( 14 )
 skeleton = NodePath("../..")
 
 [node name="Eyes" type="Spatial" parent="Body"]
@@ -57,12 +59,12 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.56
 
 [node name="RightEye" type="MeshInstance" parent="Body/Eyes"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.35 )
-mesh = SubResource( 5 )
+mesh = ExtResource( 2 )
 skeleton = NodePath("../../..")
 
 [node name="LeftEye" type="MeshInstance" parent="Body/Eyes"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.35 )
-mesh = SubResource( 5 )
+mesh = SubResource( 15 )
 skeleton = NodePath("../../..")
 
 [node name="Vision" type="RayCast" parent="Body/Eyes"]
@@ -70,6 +72,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.801909, -0.565307, 0 )
 
 [node name="Range" type="MeshInstance" parent="."]
 visible = false
-mesh = SubResource( 6 )
+mesh = SubResource( 11 )
 
 [connection signal="timeout" from="StateUpdate" to="." method="_on_StateUpdate_timeout"]

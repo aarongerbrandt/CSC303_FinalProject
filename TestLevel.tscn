@@ -20,6 +20,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.21693, -21.3563 )
 [node name="Player" parent="." instance=ExtResource( 5 )]
 
 [node name="GhostSpawner" parent="." instance=ExtResource( 1 )]
+max_spawn_time_seconds = 10
 
 [node name="EscapeMenu" parent="." instance=ExtResource( 6 )]
 

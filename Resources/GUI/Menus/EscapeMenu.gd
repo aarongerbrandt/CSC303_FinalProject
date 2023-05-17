@@ -1,26 +1,20 @@
 extends Control
 
-func _ready():
-	if OS.get_name() == "HTML5":
-		$ColorRect/ExitButton.visible = false
+var is_paused = false setget set_is_paused
+
+func set_is_paused(value: bool):
+	print("is paused called: %s" % value)
+	is_paused = value
+	get_tree().paused = is_paused
+	visible = is_paused
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE if is_paused else Input.MOUSE_MODE_CAPTURED
+
+func _unhandled_input(event):
+	if event.is_action_pressed("escape"):
+		self.is_paused = !is_paused
 
 func _on_ResumeButton_pressed():
-	print("Resume!")
-	visible = false
-	get_tree().paused = false
-
+	set_is_paused(false)
 
 func _on_ExitButton_pressed():
-	print("Exit!")
-	get_tree().quit(0)
-
-
-func _on_ResumeButton_button_down():
-	print("Resume!")
-	visible = false
-	get_tree().paused = false
-
-
-func _on_ExitButton_button_down():
-	print("Exit!")
 	get_tree().quit(0)
