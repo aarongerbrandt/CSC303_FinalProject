@@ -46,8 +46,9 @@ func _ready():
 	sus_mat.flags_transparent = true
 	chase_mat.flags_transparent = true
 
-func init(target) -> void:
+func init(target, position) -> void:
 	player = target
+	global_translation = position
 
 func _physics_process(delta):
 	pass
