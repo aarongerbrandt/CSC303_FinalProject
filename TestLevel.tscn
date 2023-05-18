@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Resources/Spawners/GhostSpawner.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Resources/Generation/LevelGenerator.tscn" type="PackedScene" id=2]
 [ext_resource path="res://TestLevel.gd" type="Script" id=3]
-[ext_resource path="res://Resources/Entities/Enemies/Ghost.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Resources/Entities/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Resources/GUI/Menus/EscapeMenu.tscn" type="PackedScene" id=6]
 
@@ -13,10 +12,6 @@ script = ExtResource( 3 )
 [node name="LevelGenerator" parent="." instance=ExtResource( 2 )]
 time_to_room_stop = 0.0
 number_of_rooms = 3
-
-[node name="Ghost" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.21693, -21.3563 )
-visible = false
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 

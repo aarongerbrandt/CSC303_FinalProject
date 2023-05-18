@@ -10,6 +10,7 @@ static func _round(n: float, m: int) -> int:
 static func getRandom3DPointInCircle(radius: float, tile_size: float) -> Vector3:
 	# Uses algorithm from 
 	# gamedeveloper.com/programming/procedural-dungeon-generation-algorithm
+	randomize()
 	var t = 2 * PI * randf()
 	var u = randf() + randf()
 	var r = null

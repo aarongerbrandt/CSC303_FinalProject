@@ -11,20 +11,19 @@ flags_transparent = true
 albedo_color = Color( 0.858824, 0.941176, 0.972549, 0.8 )
 
 [sub_resource type="SphereMesh" id=14]
+resource_local_to_scene = true
 material = SubResource( 17 )
+radial_segments = 9
 
 [sub_resource type="SpatialMaterial" id=16]
-albedo_color = Color( 1, 0, 0, 1 )
-emission_enabled = true
-emission = Color( 0.909804, 0.0627451, 0.0627451, 1 )
-emission_energy = 0.5
-emission_operator = 0
-emission_on_uv2 = false
+albedo_color = Color( 0.96, 0.94, 0.5, 1 )
 
 [sub_resource type="SphereMesh" id=15]
+resource_local_to_scene = true
 material = SubResource( 16 )
 radius = 0.25
 height = 0.5
+radial_segments = 6
 rings = 2
 
 [sub_resource type="SpatialMaterial" id=7]
@@ -51,6 +50,7 @@ autostart = true
 transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
 
 [node name="MainBody" type="MeshInstance" parent="Body"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000543213, -0.00504761, 0.00270367 )
 mesh = SubResource( 14 )
 skeleton = NodePath("../..")
 
@@ -58,20 +58,20 @@ skeleton = NodePath("../..")
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.565, -0.802 )
 
 [node name="RightEye" type="MeshInstance" parent="Body/Eyes"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.35 )
+transform = Transform( 1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0, 0, 0.35 )
 mesh = ExtResource( 2 )
 skeleton = NodePath("../../..")
 
 [node name="LeftEye" type="MeshInstance" parent="Body/Eyes"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.35 )
+transform = Transform( 1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0, 0, -0.35 )
 mesh = SubResource( 15 )
 skeleton = NodePath("../../..")
-
-[node name="Vision" type="RayCast" parent="Body/Eyes"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.801909, -0.565307, 0 )
 
 [node name="Range" type="MeshInstance" parent="."]
 visible = false
 mesh = SubResource( 11 )
 
+[node name="PickNewDirection" type="Timer" parent="."]
+
 [connection signal="timeout" from="StateUpdate" to="." method="_on_StateUpdate_timeout"]
+[connection signal="timeout" from="PickNewDirection" to="." method="_on_PickNewDirection_timeout"]

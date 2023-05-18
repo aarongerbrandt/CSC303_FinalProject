@@ -1,10 +1,12 @@
 extends KinematicBody
 class_name Ghost
 
-export(float) var base_speed := 50
-export(float) var chase_speed := 75
+export(float) var base_speed := 75
+export(float) var chase_speed := 100
 export(float) var base_health := 50
 export(float) var range_distance_modifier = 200
+
+var avg_distance: float
 
 var range_data = {
 	State.IDLE: {
@@ -62,16 +64,20 @@ var range_data = {
 }
 
 const distance_check_time := 1
+const new_dir_time = 5
 
 var state = State.IDLE
 var player: KinematicBody
+var speed = base_speed
 
 var _distance_to_player = INF
 var _can_see_player := false
 
-onready var vision = $Eyes/Vision as RayCast
+onready var _target_location = global_translation
+
 onready var body_mesh = $Body/MainBody.mesh as SphereMesh
 onready var _range = $Range.mesh as SphereMesh
+onready var new_dir_timer = $PickNewDirection as Timer
 
 enum State {
 	IDLE,
@@ -80,23 +86,14 @@ enum State {
 	CHASING
 }
 
-func _ready():
-	var pgroup = $ProximityGroup as ProximityGroup
-
 func init(target, position) -> void:
 	player = target as KinematicBody
 	global_translation = position
+	
+	_pick_new_dir()
 
 func _physics_process(delta):
-	match(state):
-		State.IDLE:
-			_idle(delta)
-		State.PATROLLING:
-			_patrol(delta)
-		State.SUSPICIOUS:
-			_sus(delta)
-		State.CHASING:
-			_chase(delta)
+	_move(delta)
 
 func _on_StateUpdate_timeout():
 	if player:
@@ -105,6 +102,8 @@ func _on_StateUpdate_timeout():
 		_distance_to_player = INF
 		state = State.IDLE
 		return
+	
+	var _init_state = state
 	
 	match(state):
 		State.IDLE:
@@ -129,6 +128,9 @@ func _on_StateUpdate_timeout():
 			if _distance_to_player > range_data[State.CHASING]["distance"]:
 				state = State.SUSPICIOUS
 				_update_mesh(state)
+	
+	if _init_state != state:
+		_pick_new_dir()
 	
 	_range.radius = range_data[state]["distance"]
 
@@ -159,22 +161,45 @@ func _update_mesh(state) -> void:
 	$Body/Eyes/LeftEye.mesh.material = eye_material
 	$Body/Eyes/RightEye.mesh.material = eye_material
 
-# Idle behavior
-func _idle(delta: float) -> void:
-	pass
+func _reached_target(target: Vector3) -> bool:
+	return (global_translation.distance_to(target) < 3)
 
-# Patrol behavior
-func _patrol(delta: float) -> void:
-	pass
-
-
-# Sus behavior
-func _sus(delta: float) -> void:
-	pass
-
-# Chase behavior
-func _chase(delta: float) -> void:
-	var move_dir = (player.global_translation - global_translation).normalized()
+func _move(delta: float):
+	if state == State.CHASING:
+		_pick_new_dir()
 	
-	move_and_slide(move_dir * chase_speed, Vector3.UP)
-	look_at(player.global_translation, Vector3.UP)
+	_move_to(_target_location)
+
+func _move_to(target_position: Vector3):
+	var move_dir = (target_position - global_translation).normalized()
+	if _reached_target(target_position):
+		return
+	
+	var target = move_dir * speed
+	
+	move_and_slide(target, Vector3.UP)
+	look_at(target_position, Vector3.UP)
+
+func _on_PickNewDirection_timeout():
+	_pick_new_dir()
+
+func _pick_new_dir():
+	var target: Vector3
+	
+	match(state):
+		State.IDLE:
+			target = global_translation
+		State.PATROLLING:
+			speed = base_speed
+			target = Util.getRandom3DPointInCircle(300, 1) + global_translation
+		State.SUSPICIOUS:
+			speed = base_speed
+			target = player.global_translation * rand_range(0.75, 1.25)
+		State.CHASING:
+			speed = chase_speed
+			target = player.global_translation
+		_:
+			return
+	_target_location = target
+	
+	new_dir_timer.start(new_dir_time)
