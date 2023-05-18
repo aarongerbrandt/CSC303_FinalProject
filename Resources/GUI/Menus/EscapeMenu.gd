@@ -3,7 +3,7 @@ extends Control
 var is_paused = false setget set_is_paused
 
 func set_is_paused(value: bool):
-	print("is paused called: %s" % value)
+#	print("is paused called: %s" % value)
 	is_paused = value
 	get_tree().paused = is_paused
 	visible = is_paused

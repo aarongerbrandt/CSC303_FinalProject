@@ -37,6 +37,7 @@ func fire():
 		bullets.restart()
 	else:
 		animation_player.stop()
+		bullets.emitting = false
 
 #var bullet = Bullet.instance()
 #get_node("/root/TestLevel").add_child(bullet)

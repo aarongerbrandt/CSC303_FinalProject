@@ -1,0 +1,2920 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Processed/Objects/Tiles/BrickB/FloorTile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Processed/Objects/Pillars/pillar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Processed/Objects/Walls/WallSection.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Imported/Furniture/Bookcases/bookcaseWideFilled.dae" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Imported/Furniture/Bookcases/bookcaseFilled.dae" type="PackedScene" id=5]
+
+[node name="MainRoom" type="Spatial"]
+
+[node name="Floor" type="Spatial" parent="."]
+
+[node name="FloorTile3" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, -90 )
+
+[node name="FloorTile" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, -270 )
+
+[node name="FloorTile2" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, -450 )
+
+[node name="FloorTile4" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, -90 )
+
+[node name="FloorTile5" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, -270 )
+
+[node name="FloorTile6" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, -450 )
+
+[node name="FloorTile7" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, -90 )
+
+[node name="FloorTile8" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, -270 )
+
+[node name="FloorTile9" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, -450 )
+
+[node name="FloorTile10" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, 450 )
+
+[node name="FloorTile11" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, 270 )
+
+[node name="FloorTile12" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, 90 )
+
+[node name="FloorTile13" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 450 )
+
+[node name="FloorTile14" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 270 )
+
+[node name="FloorTile15" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 90 )
+
+[node name="FloorTile16" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, 450 )
+
+[node name="FloorTile17" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, 270 )
+
+[node name="FloorTile18" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, 90 )
+
+[node name="FloorTile19" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, -90 )
+
+[node name="FloorTile20" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, -270 )
+
+[node name="FloorTile21" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, -450 )
+
+[node name="FloorTile22" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, -90 )
+
+[node name="FloorTile23" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, -270 )
+
+[node name="FloorTile24" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, -450 )
+
+[node name="FloorTile25" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, -90 )
+
+[node name="FloorTile26" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, -270 )
+
+[node name="FloorTile27" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, -450 )
+
+[node name="FloorTile28" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, 450 )
+
+[node name="FloorTile29" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, 270 )
+
+[node name="FloorTile30" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, 90 )
+
+[node name="FloorTile31" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, 450 )
+
+[node name="FloorTile32" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, 270 )
+
+[node name="FloorTile33" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, 90 )
+
+[node name="FloorTile34" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 450 )
+
+[node name="FloorTile35" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 270 )
+
+[node name="FloorTile36" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 90 )
+
+[node name="Ceiling" type="Spatial" parent="."]
+transform = Transform( 1.1, 0, 0, 0, 1, 0, 0, 0, 1.1, 0, 241, 0 )
+
+[node name="FloorTile3" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, -90 )
+
+[node name="FloorTile" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, -270 )
+
+[node name="FloorTile2" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, -450 )
+
+[node name="FloorTile4" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, -90 )
+
+[node name="FloorTile5" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, -270 )
+
+[node name="FloorTile6" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, -450 )
+
+[node name="FloorTile7" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, -90 )
+
+[node name="FloorTile8" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, -270 )
+
+[node name="FloorTile9" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, -450 )
+
+[node name="FloorTile10" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, 450 )
+
+[node name="FloorTile11" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, 270 )
+
+[node name="FloorTile12" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -270, 0, 90 )
+
+[node name="FloorTile13" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 450 )
+
+[node name="FloorTile14" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 270 )
+
+[node name="FloorTile15" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 90 )
+
+[node name="FloorTile16" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, 450 )
+
+[node name="FloorTile17" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, 270 )
+
+[node name="FloorTile18" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -450, 0, 90 )
+
+[node name="FloorTile19" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, -90 )
+
+[node name="FloorTile20" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, -270 )
+
+[node name="FloorTile21" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, -450 )
+
+[node name="FloorTile22" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, -90 )
+
+[node name="FloorTile23" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, -270 )
+
+[node name="FloorTile24" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, -450 )
+
+[node name="FloorTile25" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, -90 )
+
+[node name="FloorTile26" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, -270 )
+
+[node name="FloorTile27" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, -450 )
+
+[node name="FloorTile28" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, 450 )
+
+[node name="FloorTile29" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, 270 )
+
+[node name="FloorTile30" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 270, 0, 90 )
+
+[node name="FloorTile31" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, 450 )
+
+[node name="FloorTile32" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, 270 )
+
+[node name="FloorTile33" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 450, 0, 90 )
+
+[node name="FloorTile34" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 450 )
+
+[node name="FloorTile35" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 270 )
+
+[node name="FloorTile36" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 90 )
+
+[node name="Walls" type="Spatial" parent="."]
+
+[node name="Wall1" type="Spatial" parent="Walls"]
+
+[node name="Layer1" type="Spatial" parent="Walls/Wall1"]
+
+[node name="WallSection2" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall1/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Layer2" type="Spatial" parent="Walls/Wall1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120, 0 )
+
+[node name="WallSection" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection2" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection8" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall1/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Wall2" type="Spatial" parent="Walls"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
+
+[node name="Layer1" type="Spatial" parent="Walls/Wall2"]
+
+[node name="WallSection" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection2" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection8" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall2/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Layer2" type="Spatial" parent="Walls/Wall2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120, 0 )
+
+[node name="WallSection" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection2" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection8" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall2/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Wall3" type="Spatial" parent="Walls"]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 0 )
+
+[node name="Layer1" type="Spatial" parent="Walls/Wall3"]
+
+[node name="WallSection" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection2" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection8" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall3/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Layer2" type="Spatial" parent="Walls/Wall3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120, 0 )
+
+[node name="WallSection" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection2" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection8" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall3/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Wall4" type="Spatial" parent="Walls"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+
+[node name="Layer1" type="Spatial" parent="Walls/Wall4"]
+
+[node name="WallSection" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection2" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection8" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall4/Layer1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Layer2" type="Spatial" parent="Walls/Wall4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 120, 0 )
+
+[node name="WallSection" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection2" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 360, 0, 540 )
+
+[node name="WallSection5" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 480, 0, 540 )
+
+[node name="WallSection3" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 240, 0, 540 )
+
+[node name="WallSection4" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 540 )
+
+[node name="WallSection6" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -480, 0, 540 )
+
+[node name="WallSection7" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 540 )
+
+[node name="WallSection8" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 540 )
+
+[node name="WallSection9" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -240, 0, 540 )
+
+[node name="WallSection10" parent="Walls/Wall4/Layer2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -360, 0, 540 )
+
+[node name="Decorations" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0 )
+
+[node name="Pillars" type="Spatial" parent="Decorations"]
+
+[node name="Pillar" type="Spatial" parent="Decorations/Pillars"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, 330, 0, 330 )
+
+[node name="pillar" parent="Decorations/Pillars/Pillar" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="pillar2" parent="Decorations/Pillars/Pillar" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 80, 0 )
+
+[node name="pillar3" parent="Decorations/Pillars/Pillar" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 18, 0, 0, 0, 20, 0, 160, 0 )
+
+[node name="Pillar2" type="Spatial" parent="Decorations/Pillars"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, -330, 0, 330 )
+
+[node name="pillar" parent="Decorations/Pillars/Pillar2" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="pillar2" parent="Decorations/Pillars/Pillar2" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 80, 0 )
+
+[node name="pillar3" parent="Decorations/Pillars/Pillar2" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 18, 0, 0, 0, 20, 0, 160, 0 )
+
+[node name="Pillar5" type="Spatial" parent="Decorations/Pillars"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, -330, 0, 0 )
+
+[node name="pillar" parent="Decorations/Pillars/Pillar5" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="pillar2" parent="Decorations/Pillars/Pillar5" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 80, 0 )
+
+[node name="pillar3" parent="Decorations/Pillars/Pillar5" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 18, 0, 0, 0, 20, 0, 160, 0 )
+
+[node name="Pillar7" type="Spatial" parent="Decorations/Pillars"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, 330, 0, 0 )
+
+[node name="pillar" parent="Decorations/Pillars/Pillar7" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="pillar2" parent="Decorations/Pillars/Pillar7" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 80, 0 )
+
+[node name="pillar3" parent="Decorations/Pillars/Pillar7" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 18, 0, 0, 0, 20, 0, 160, 0 )
+
+[node name="Pillar3" type="Spatial" parent="Decorations/Pillars"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, 330, 0, -330 )
+
+[node name="pillar" parent="Decorations/Pillars/Pillar3" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="pillar2" parent="Decorations/Pillars/Pillar3" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 80, 0 )
+
+[node name="pillar3" parent="Decorations/Pillars/Pillar3" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 18, 0, 0, 0, 20, 0, 160, 0 )
+
+[node name="Pillar6" type="Spatial" parent="Decorations/Pillars"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, 0, 0, -330 )
+
+[node name="pillar" parent="Decorations/Pillars/Pillar6" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="pillar2" parent="Decorations/Pillars/Pillar6" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 80, 0 )
+
+[node name="pillar3" parent="Decorations/Pillars/Pillar6" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 18, 0, 0, 0, 20, 0, 160, 0 )
+
+[node name="Pillar4" type="Spatial" parent="Decorations/Pillars"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, -330, 0, -330 )
+
+[node name="pillar" parent="Decorations/Pillars/Pillar4" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="pillar2" parent="Decorations/Pillars/Pillar4" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 80, 0 )
+
+[node name="pillar3" parent="Decorations/Pillars/Pillar4" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 18, 0, 0, 0, 20, 0, 160, 0 )
+
+[node name="Props" type="Spatial" parent="Decorations"]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 6, 0 )
+
+[node name="Bookcases" type="Spatial" parent="Decorations/Props"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25.65 )
+
+[node name="bookcaseWideFilled" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 0, 0 )
+
+[node name="bookcaseWideFilled2" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0, 0 )
+
+[node name="bookcaseWideFilled3" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0 )
+
+[node name="bookcaseWideFilled5" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 0, 0 )
+
+[node name="bookcaseWideFilled6" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0 )
+
+[node name="bookcaseFilled" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 0, 0 )
+
+[node name="bookcaseFilled2" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 0, 0 )
+
+[node name="bookcaseFilled3" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, 0 )
+
+[node name="bookcaseFilled4" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 0, 0 )
+
+[node name="bookcaseWideFilled4" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 1.9, 0 )
+
+[node name="bookcaseWideFilled7" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.9, 0 )
+
+[node name="bookcaseWideFilled8" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1.9, 0 )
+
+[node name="bookcaseWideFilled9" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 1.9, 0 )
+
+[node name="bookcaseWideFilled10" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 1.9, 0 )
+
+[node name="bookcaseFilled5" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 1.9, 0 )
+
+[node name="bookcaseFilled6" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 1.9, 0 )
+
+[node name="bookcaseFilled7" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 1.9, 0 )
+
+[node name="bookcaseFilled8" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 1.9, 0 )
+
+[node name="bookcaseWideFilled11" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 0, 0 )
+
+[node name="bookcaseWideFilled12" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 0, 0 )
+
+[node name="bookcaseWideFilled13" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 0, 0 )
+
+[node name="bookcaseWideFilled14" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 0, 0 )
+
+[node name="bookcaseWideFilled15" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 0, 0 )
+
+[node name="bookcaseFilled9" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 0, 0 )
+
+[node name="bookcaseFilled10" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 0, 0 )
+
+[node name="bookcaseFilled11" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 0, 0 )
+
+[node name="bookcaseFilled12" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 0, 0 )
+
+[node name="bookcaseWideFilled16" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 1.9, 0 )
+
+[node name="bookcaseWideFilled17" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 1.9, 0 )
+
+[node name="bookcaseWideFilled18" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled19" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 1.9, 0 )
+
+[node name="bookcaseWideFilled20" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 1.9, 0 )
+
+[node name="bookcaseFilled13" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 1.9, 0 )
+
+[node name="bookcaseFilled14" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 1.9, 0 )
+
+[node name="bookcaseFilled15" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 1.9, 0 )
+
+[node name="bookcaseFilled16" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 1.9, 0 )
+
+[node name="bookcaseWideFilled21" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 0, 0 )
+
+[node name="bookcaseWideFilled22" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 0, 0 )
+
+[node name="bookcaseWideFilled23" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0 )
+
+[node name="bookcaseWideFilled24" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0 )
+
+[node name="bookcaseWideFilled25" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 0, 0 )
+
+[node name="bookcaseFilled17" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 0, 0 )
+
+[node name="bookcaseFilled18" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 0, 0 )
+
+[node name="bookcaseFilled19" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 0, 0 )
+
+[node name="bookcaseFilled20" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 0, 0 )
+
+[node name="bookcaseWideFilled26" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 1.9, 0 )
+
+[node name="bookcaseWideFilled27" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 1.9, 0 )
+
+[node name="bookcaseWideFilled28" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled29" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled30" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 1.9, 0 )
+
+[node name="bookcaseFilled21" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 1.9, 0 )
+
+[node name="bookcaseFilled22" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 1.9, 0 )
+
+[node name="bookcaseFilled23" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.9, 0 )
+
+[node name="bookcaseFilled24" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled31" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 0, 0 )
+
+[node name="bookcaseWideFilled32" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 0, 0 )
+
+[node name="bookcaseWideFilled33" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0 )
+
+[node name="bookcaseWideFilled34" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0 )
+
+[node name="bookcaseWideFilled35" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 0, 0 )
+
+[node name="bookcaseFilled25" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 0, 0 )
+
+[node name="bookcaseFilled26" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 0, 0 )
+
+[node name="bookcaseFilled27" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 0, 0 )
+
+[node name="bookcaseWideFilled41" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled42" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 1.9, 0 )
+
+[node name="bookcaseFilled33" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled43" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 0 )
+
+[node name="bookcaseWideFilled44" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0, 0 )
+
+[node name="bookcaseWideFilled49" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 1.9, 0 )
+
+[node name="bookcaseWideFilled50" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0 )
+
+[node name="bookcaseFilled34" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 0, 0 )
+
+[node name="bookcaseWideFilled45" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled46" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 1.9, 0 )
+
+[node name="bookcaseFilled35" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled47" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 0 )
+
+[node name="bookcaseWideFilled48" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0, 0 )
+
+[node name="bookcaseFilled36" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 0, 0 )
+
+[node name="bookcaseFilled28" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 0, 0 )
+
+[node name="bookcaseWideFilled36" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 1.9, 0 )
+
+[node name="bookcaseWideFilled37" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 1.9, 0 )
+
+[node name="bookcaseWideFilled38" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled39" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled40" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 1.9, 0 )
+
+[node name="bookcaseFilled29" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 1.9, 0 )
+
+[node name="bookcaseFilled30" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 1.9, 0 )
+
+[node name="bookcaseFilled31" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.9, 0 )
+
+[node name="bookcaseFilled32" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled51" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 3.8, 0 )
+
+[node name="bookcaseWideFilled52" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.8, 0 )
+
+[node name="bookcaseWideFilled53" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3.8, 0 )
+
+[node name="bookcaseWideFilled54" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 3.8, 0 )
+
+[node name="bookcaseWideFilled55" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 3.8, 0 )
+
+[node name="bookcaseFilled37" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 3.8, 0 )
+
+[node name="bookcaseFilled38" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 3.8, 0 )
+
+[node name="bookcaseFilled39" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 3.8, 0 )
+
+[node name="bookcaseFilled40" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 3.8, 0 )
+
+[node name="bookcaseWideFilled56" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 5.7, 0 )
+
+[node name="bookcaseWideFilled57" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 5.7, 0 )
+
+[node name="bookcaseWideFilled58" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5.7, 0 )
+
+[node name="bookcaseWideFilled59" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 5.7, 0 )
+
+[node name="bookcaseWideFilled60" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 5.7, 0 )
+
+[node name="bookcaseFilled41" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 5.7, 0 )
+
+[node name="bookcaseFilled42" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 5.7, 0 )
+
+[node name="bookcaseFilled43" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 5.7, 0 )
+
+[node name="bookcaseFilled44" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 5.7, 0 )
+
+[node name="bookcaseWideFilled61" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 3.8, 0 )
+
+[node name="bookcaseWideFilled62" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 3.8, 0 )
+
+[node name="bookcaseWideFilled63" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled64" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 3.8, 0 )
+
+[node name="bookcaseWideFilled65" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 3.8, 0 )
+
+[node name="bookcaseFilled45" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 3.8, 0 )
+
+[node name="bookcaseFilled46" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 3.8, 0 )
+
+[node name="bookcaseFilled47" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 3.8, 0 )
+
+[node name="bookcaseFilled48" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 3.8, 0 )
+
+[node name="bookcaseWideFilled66" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 5.7, 0 )
+
+[node name="bookcaseWideFilled67" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 5.7, 0 )
+
+[node name="bookcaseWideFilled68" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled69" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 5.7, 0 )
+
+[node name="bookcaseWideFilled70" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 5.7, 0 )
+
+[node name="bookcaseFilled49" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 5.7, 0 )
+
+[node name="bookcaseFilled50" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 5.7, 0 )
+
+[node name="bookcaseFilled51" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 5.7, 0 )
+
+[node name="bookcaseFilled52" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 5.7, 0 )
+
+[node name="bookcaseWideFilled71" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 3.8, 0 )
+
+[node name="bookcaseWideFilled72" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 3.8, 0 )
+
+[node name="bookcaseWideFilled73" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled74" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled75" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 3.8, 0 )
+
+[node name="bookcaseFilled53" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 3.8, 0 )
+
+[node name="bookcaseFilled54" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 3.8, 0 )
+
+[node name="bookcaseFilled55" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 3.8, 0 )
+
+[node name="bookcaseFilled56" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled76" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 5.7, 0 )
+
+[node name="bookcaseWideFilled77" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 5.7, 0 )
+
+[node name="bookcaseWideFilled78" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled79" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled80" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 5.7, 0 )
+
+[node name="bookcaseFilled57" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 5.7, 0 )
+
+[node name="bookcaseFilled58" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 5.7, 0 )
+
+[node name="bookcaseFilled59" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 5.7, 0 )
+
+[node name="bookcaseFilled60" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled81" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 3.8, 0 )
+
+[node name="bookcaseWideFilled82" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 3.8, 0 )
+
+[node name="bookcaseWideFilled83" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled84" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled85" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 3.8, 0 )
+
+[node name="bookcaseFilled61" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 3.8, 0 )
+
+[node name="bookcaseFilled62" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 3.8, 0 )
+
+[node name="bookcaseFilled63" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 3.8, 0 )
+
+[node name="bookcaseWideFilled86" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled87" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 5.7, 0 )
+
+[node name="bookcaseFilled64" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled88" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled89" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 3.8, 0 )
+
+[node name="bookcaseWideFilled90" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 5.7, 0 )
+
+[node name="bookcaseWideFilled91" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3.8, 0 )
+
+[node name="bookcaseFilled65" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled92" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled93" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 5.7, 0 )
+
+[node name="bookcaseFilled66" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled94" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled95" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 3.8, 0 )
+
+[node name="bookcaseFilled67" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 3.8, 0 )
+
+[node name="bookcaseFilled68" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled96" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 5.7, 0 )
+
+[node name="bookcaseWideFilled97" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 5.7, 0 )
+
+[node name="bookcaseWideFilled98" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled99" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled100" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 5.7, 0 )
+
+[node name="bookcaseFilled69" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 5.7, 0 )
+
+[node name="bookcaseFilled70" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 5.7, 0 )
+
+[node name="bookcaseFilled71" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 5.7, 0 )
+
+[node name="bookcaseFilled72" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled101" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 7.4, 0 )
+
+[node name="bookcaseWideFilled102" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 7.4, 0 )
+
+[node name="bookcaseWideFilled103" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 7.4, 0 )
+
+[node name="bookcaseWideFilled104" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 7.4, 0 )
+
+[node name="bookcaseWideFilled105" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 7.4, 0 )
+
+[node name="bookcaseFilled73" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 7.4, 0 )
+
+[node name="bookcaseFilled74" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 7.4, 0 )
+
+[node name="bookcaseFilled75" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 7.4, 0 )
+
+[node name="bookcaseFilled76" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 7.4, 0 )
+
+[node name="bookcaseWideFilled106" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 9.3, 0 )
+
+[node name="bookcaseWideFilled107" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 9.3, 0 )
+
+[node name="bookcaseWideFilled108" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 9.3, 0 )
+
+[node name="bookcaseWideFilled109" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 9.3, 0 )
+
+[node name="bookcaseWideFilled110" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 9.3, 0 )
+
+[node name="bookcaseFilled77" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 9.3, 0 )
+
+[node name="bookcaseFilled78" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 9.3, 0 )
+
+[node name="bookcaseFilled79" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 9.3, 0 )
+
+[node name="bookcaseFilled80" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 9.3, 0 )
+
+[node name="bookcaseWideFilled111" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 7.4, 0 )
+
+[node name="bookcaseWideFilled112" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 7.4, 0 )
+
+[node name="bookcaseWideFilled113" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled114" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 7.4, 0 )
+
+[node name="bookcaseWideFilled115" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 7.4, 0 )
+
+[node name="bookcaseFilled81" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 7.4, 0 )
+
+[node name="bookcaseFilled82" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 7.4, 0 )
+
+[node name="bookcaseFilled83" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 7.4, 0 )
+
+[node name="bookcaseFilled84" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 7.4, 0 )
+
+[node name="bookcaseWideFilled116" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 9.3, 0 )
+
+[node name="bookcaseWideFilled117" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 9.3, 0 )
+
+[node name="bookcaseWideFilled118" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled119" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 9.3, 0 )
+
+[node name="bookcaseWideFilled120" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 9.3, 0 )
+
+[node name="bookcaseFilled85" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 9.3, 0 )
+
+[node name="bookcaseFilled86" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 9.3, 0 )
+
+[node name="bookcaseFilled87" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 9.3, 0 )
+
+[node name="bookcaseFilled88" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 9.3, 0 )
+
+[node name="bookcaseWideFilled121" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 7.4, 0 )
+
+[node name="bookcaseWideFilled122" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 7.4, 0 )
+
+[node name="bookcaseWideFilled123" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled124" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled125" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 7.4, 0 )
+
+[node name="bookcaseFilled89" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 7.4, 0 )
+
+[node name="bookcaseFilled90" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 7.4, 0 )
+
+[node name="bookcaseFilled91" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 7.4, 0 )
+
+[node name="bookcaseFilled92" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled126" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 9.3, 0 )
+
+[node name="bookcaseWideFilled127" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 9.3, 0 )
+
+[node name="bookcaseWideFilled128" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled129" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled130" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 9.3, 0 )
+
+[node name="bookcaseFilled93" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 9.3, 0 )
+
+[node name="bookcaseFilled94" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 9.3, 0 )
+
+[node name="bookcaseFilled95" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 9.3, 0 )
+
+[node name="bookcaseFilled96" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled131" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 7.4, 0 )
+
+[node name="bookcaseWideFilled132" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 7.4, 0 )
+
+[node name="bookcaseWideFilled133" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled134" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled135" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 7.4, 0 )
+
+[node name="bookcaseFilled97" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 7.4, 0 )
+
+[node name="bookcaseFilled98" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 7.4, 0 )
+
+[node name="bookcaseFilled99" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 7.4, 0 )
+
+[node name="bookcaseWideFilled136" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled137" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 9.3, 0 )
+
+[node name="bookcaseFilled100" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled138" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled139" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 7.4, 0 )
+
+[node name="bookcaseWideFilled140" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 9.3, 0 )
+
+[node name="bookcaseWideFilled141" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 7.4, 0 )
+
+[node name="bookcaseFilled101" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled142" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled143" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 9.3, 0 )
+
+[node name="bookcaseFilled102" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled144" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled145" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 7.4, 0 )
+
+[node name="bookcaseFilled103" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 7.4, 0 )
+
+[node name="bookcaseFilled104" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled146" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 9.3, 0 )
+
+[node name="bookcaseWideFilled147" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 9.3, 0 )
+
+[node name="bookcaseWideFilled148" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled149" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled150" parent="Decorations/Props/Bookcases" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 9.3, 0 )
+
+[node name="bookcaseFilled105" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 9.3, 0 )
+
+[node name="bookcaseFilled106" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 9.3, 0 )
+
+[node name="bookcaseFilled107" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 9.3, 0 )
+
+[node name="bookcaseFilled108" parent="Decorations/Props/Bookcases" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 9.3, 0 )
+
+[node name="Bookcases2" type="Spatial" parent="Decorations/Props"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -26.4, 0, 0.1 )
+
+[node name="bookcaseWideFilled" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 0, 0 )
+
+[node name="bookcaseWideFilled2" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0, 0 )
+
+[node name="bookcaseWideFilled3" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0 )
+
+[node name="bookcaseWideFilled5" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 0, 0 )
+
+[node name="bookcaseWideFilled6" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0 )
+
+[node name="bookcaseFilled" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 0, 0 )
+
+[node name="bookcaseFilled2" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 0, 0 )
+
+[node name="bookcaseFilled3" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, 0 )
+
+[node name="bookcaseFilled4" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 0, 0 )
+
+[node name="bookcaseWideFilled4" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 1.9, 0 )
+
+[node name="bookcaseWideFilled7" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.9, 0 )
+
+[node name="bookcaseWideFilled8" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1.9, 0 )
+
+[node name="bookcaseWideFilled9" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 1.9, 0 )
+
+[node name="bookcaseWideFilled10" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 1.9, 0 )
+
+[node name="bookcaseFilled5" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 1.9, 0 )
+
+[node name="bookcaseFilled6" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 1.9, 0 )
+
+[node name="bookcaseFilled7" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 1.9, 0 )
+
+[node name="bookcaseFilled8" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 1.9, 0 )
+
+[node name="bookcaseWideFilled11" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 0, 0 )
+
+[node name="bookcaseWideFilled12" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 0, 0 )
+
+[node name="bookcaseWideFilled13" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 0, 0 )
+
+[node name="bookcaseWideFilled14" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 0, 0 )
+
+[node name="bookcaseWideFilled15" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 0, 0 )
+
+[node name="bookcaseFilled9" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 0, 0 )
+
+[node name="bookcaseFilled10" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 0, 0 )
+
+[node name="bookcaseFilled11" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 0, 0 )
+
+[node name="bookcaseFilled12" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 0, 0 )
+
+[node name="bookcaseWideFilled16" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 1.9, 0 )
+
+[node name="bookcaseWideFilled17" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 1.9, 0 )
+
+[node name="bookcaseWideFilled18" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled19" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 1.9, 0 )
+
+[node name="bookcaseWideFilled20" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 1.9, 0 )
+
+[node name="bookcaseFilled13" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 1.9, 0 )
+
+[node name="bookcaseFilled14" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 1.9, 0 )
+
+[node name="bookcaseFilled15" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 1.9, 0 )
+
+[node name="bookcaseFilled16" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 1.9, 0 )
+
+[node name="bookcaseWideFilled21" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 0, 0 )
+
+[node name="bookcaseWideFilled22" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 0, 0 )
+
+[node name="bookcaseWideFilled23" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0 )
+
+[node name="bookcaseWideFilled24" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0 )
+
+[node name="bookcaseWideFilled25" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 0, 0 )
+
+[node name="bookcaseFilled17" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 0, 0 )
+
+[node name="bookcaseFilled18" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 0, 0 )
+
+[node name="bookcaseFilled19" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 0, 0 )
+
+[node name="bookcaseFilled20" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 0, 0 )
+
+[node name="bookcaseWideFilled26" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 1.9, 0 )
+
+[node name="bookcaseWideFilled27" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 1.9, 0 )
+
+[node name="bookcaseWideFilled28" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled29" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled30" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 1.9, 0 )
+
+[node name="bookcaseFilled21" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 1.9, 0 )
+
+[node name="bookcaseFilled22" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 1.9, 0 )
+
+[node name="bookcaseFilled23" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.9, 0 )
+
+[node name="bookcaseFilled24" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled31" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 0, 0 )
+
+[node name="bookcaseWideFilled32" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 0, 0 )
+
+[node name="bookcaseWideFilled33" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0 )
+
+[node name="bookcaseWideFilled34" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0 )
+
+[node name="bookcaseWideFilled35" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 0, 0 )
+
+[node name="bookcaseFilled25" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 0, 0 )
+
+[node name="bookcaseFilled26" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 0, 0 )
+
+[node name="bookcaseFilled27" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 0, 0 )
+
+[node name="bookcaseWideFilled41" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled42" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 1.9, 0 )
+
+[node name="bookcaseFilled33" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled43" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 0 )
+
+[node name="bookcaseWideFilled44" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0, 0 )
+
+[node name="bookcaseWideFilled49" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 1.9, 0 )
+
+[node name="bookcaseWideFilled50" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0 )
+
+[node name="bookcaseFilled34" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 0, 0 )
+
+[node name="bookcaseWideFilled45" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled46" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 1.9, 0 )
+
+[node name="bookcaseFilled35" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled47" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 0 )
+
+[node name="bookcaseWideFilled48" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0, 0 )
+
+[node name="bookcaseFilled36" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 0, 0 )
+
+[node name="bookcaseFilled28" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 0, 0 )
+
+[node name="bookcaseWideFilled36" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 1.9, 0 )
+
+[node name="bookcaseWideFilled37" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 1.9, 0 )
+
+[node name="bookcaseWideFilled38" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled39" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled40" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 1.9, 0 )
+
+[node name="bookcaseFilled29" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 1.9, 0 )
+
+[node name="bookcaseFilled30" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 1.9, 0 )
+
+[node name="bookcaseFilled31" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.9, 0 )
+
+[node name="bookcaseFilled32" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled51" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 3.8, 0 )
+
+[node name="bookcaseWideFilled52" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.8, 0 )
+
+[node name="bookcaseWideFilled53" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3.8, 0 )
+
+[node name="bookcaseWideFilled54" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 3.8, 0 )
+
+[node name="bookcaseWideFilled55" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 3.8, 0 )
+
+[node name="bookcaseFilled37" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 3.8, 0 )
+
+[node name="bookcaseFilled38" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 3.8, 0 )
+
+[node name="bookcaseFilled39" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 3.8, 0 )
+
+[node name="bookcaseFilled40" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 3.8, 0 )
+
+[node name="bookcaseWideFilled56" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 5.7, 0 )
+
+[node name="bookcaseWideFilled57" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 5.7, 0 )
+
+[node name="bookcaseWideFilled58" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5.7, 0 )
+
+[node name="bookcaseWideFilled59" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 5.7, 0 )
+
+[node name="bookcaseWideFilled60" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 5.7, 0 )
+
+[node name="bookcaseFilled41" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 5.7, 0 )
+
+[node name="bookcaseFilled42" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 5.7, 0 )
+
+[node name="bookcaseFilled43" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 5.7, 0 )
+
+[node name="bookcaseFilled44" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 5.7, 0 )
+
+[node name="bookcaseWideFilled61" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 3.8, 0 )
+
+[node name="bookcaseWideFilled62" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 3.8, 0 )
+
+[node name="bookcaseWideFilled63" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled64" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 3.8, 0 )
+
+[node name="bookcaseWideFilled65" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 3.8, 0 )
+
+[node name="bookcaseFilled45" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 3.8, 0 )
+
+[node name="bookcaseFilled46" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 3.8, 0 )
+
+[node name="bookcaseFilled47" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 3.8, 0 )
+
+[node name="bookcaseFilled48" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 3.8, 0 )
+
+[node name="bookcaseWideFilled66" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 5.7, 0 )
+
+[node name="bookcaseWideFilled67" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 5.7, 0 )
+
+[node name="bookcaseWideFilled68" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled69" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 5.7, 0 )
+
+[node name="bookcaseWideFilled70" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 5.7, 0 )
+
+[node name="bookcaseFilled49" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 5.7, 0 )
+
+[node name="bookcaseFilled50" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 5.7, 0 )
+
+[node name="bookcaseFilled51" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 5.7, 0 )
+
+[node name="bookcaseFilled52" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 5.7, 0 )
+
+[node name="bookcaseWideFilled71" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 3.8, 0 )
+
+[node name="bookcaseWideFilled72" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 3.8, 0 )
+
+[node name="bookcaseWideFilled73" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled74" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled75" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 3.8, 0 )
+
+[node name="bookcaseFilled53" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 3.8, 0 )
+
+[node name="bookcaseFilled54" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 3.8, 0 )
+
+[node name="bookcaseFilled55" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 3.8, 0 )
+
+[node name="bookcaseFilled56" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled76" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 5.7, 0 )
+
+[node name="bookcaseWideFilled77" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 5.7, 0 )
+
+[node name="bookcaseWideFilled78" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled79" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled80" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 5.7, 0 )
+
+[node name="bookcaseFilled57" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 5.7, 0 )
+
+[node name="bookcaseFilled58" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 5.7, 0 )
+
+[node name="bookcaseFilled59" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 5.7, 0 )
+
+[node name="bookcaseFilled60" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled81" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 3.8, 0 )
+
+[node name="bookcaseWideFilled82" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 3.8, 0 )
+
+[node name="bookcaseWideFilled83" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled84" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled85" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 3.8, 0 )
+
+[node name="bookcaseFilled61" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 3.8, 0 )
+
+[node name="bookcaseFilled62" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 3.8, 0 )
+
+[node name="bookcaseFilled63" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 3.8, 0 )
+
+[node name="bookcaseWideFilled86" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled87" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 5.7, 0 )
+
+[node name="bookcaseFilled64" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled88" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled89" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 3.8, 0 )
+
+[node name="bookcaseWideFilled90" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 5.7, 0 )
+
+[node name="bookcaseWideFilled91" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3.8, 0 )
+
+[node name="bookcaseFilled65" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled92" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled93" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 5.7, 0 )
+
+[node name="bookcaseFilled66" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled94" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled95" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 3.8, 0 )
+
+[node name="bookcaseFilled67" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 3.8, 0 )
+
+[node name="bookcaseFilled68" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled96" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 5.7, 0 )
+
+[node name="bookcaseWideFilled97" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 5.7, 0 )
+
+[node name="bookcaseWideFilled98" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled99" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled100" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 5.7, 0 )
+
+[node name="bookcaseFilled69" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 5.7, 0 )
+
+[node name="bookcaseFilled70" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 5.7, 0 )
+
+[node name="bookcaseFilled71" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 5.7, 0 )
+
+[node name="bookcaseFilled72" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled101" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 7.4, 0 )
+
+[node name="bookcaseWideFilled102" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 7.4, 0 )
+
+[node name="bookcaseWideFilled103" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 7.4, 0 )
+
+[node name="bookcaseWideFilled104" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 7.4, 0 )
+
+[node name="bookcaseWideFilled105" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 7.4, 0 )
+
+[node name="bookcaseFilled73" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 7.4, 0 )
+
+[node name="bookcaseFilled74" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 7.4, 0 )
+
+[node name="bookcaseFilled75" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 7.4, 0 )
+
+[node name="bookcaseFilled76" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 7.4, 0 )
+
+[node name="bookcaseWideFilled106" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 9.3, 0 )
+
+[node name="bookcaseWideFilled107" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 9.3, 0 )
+
+[node name="bookcaseWideFilled108" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 9.3, 0 )
+
+[node name="bookcaseWideFilled109" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 9.3, 0 )
+
+[node name="bookcaseWideFilled110" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 9.3, 0 )
+
+[node name="bookcaseFilled77" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 9.3, 0 )
+
+[node name="bookcaseFilled78" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 9.3, 0 )
+
+[node name="bookcaseFilled79" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 9.3, 0 )
+
+[node name="bookcaseFilled80" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 9.3, 0 )
+
+[node name="bookcaseWideFilled111" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 7.4, 0 )
+
+[node name="bookcaseWideFilled112" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 7.4, 0 )
+
+[node name="bookcaseWideFilled113" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled114" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 7.4, 0 )
+
+[node name="bookcaseWideFilled115" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 7.4, 0 )
+
+[node name="bookcaseFilled81" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 7.4, 0 )
+
+[node name="bookcaseFilled82" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 7.4, 0 )
+
+[node name="bookcaseFilled83" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 7.4, 0 )
+
+[node name="bookcaseFilled84" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 7.4, 0 )
+
+[node name="bookcaseWideFilled116" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 9.3, 0 )
+
+[node name="bookcaseWideFilled117" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 9.3, 0 )
+
+[node name="bookcaseWideFilled118" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled119" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 9.3, 0 )
+
+[node name="bookcaseWideFilled120" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 9.3, 0 )
+
+[node name="bookcaseFilled85" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 9.3, 0 )
+
+[node name="bookcaseFilled86" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 9.3, 0 )
+
+[node name="bookcaseFilled87" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 9.3, 0 )
+
+[node name="bookcaseFilled88" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 9.3, 0 )
+
+[node name="bookcaseWideFilled121" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 7.4, 0 )
+
+[node name="bookcaseWideFilled122" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 7.4, 0 )
+
+[node name="bookcaseWideFilled123" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled124" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled125" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 7.4, 0 )
+
+[node name="bookcaseFilled89" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 7.4, 0 )
+
+[node name="bookcaseFilled90" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 7.4, 0 )
+
+[node name="bookcaseFilled91" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 7.4, 0 )
+
+[node name="bookcaseFilled92" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled126" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 9.3, 0 )
+
+[node name="bookcaseWideFilled127" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 9.3, 0 )
+
+[node name="bookcaseWideFilled128" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled129" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled130" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 9.3, 0 )
+
+[node name="bookcaseFilled93" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 9.3, 0 )
+
+[node name="bookcaseFilled94" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 9.3, 0 )
+
+[node name="bookcaseFilled95" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 9.3, 0 )
+
+[node name="bookcaseFilled96" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled131" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 7.4, 0 )
+
+[node name="bookcaseWideFilled132" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 7.4, 0 )
+
+[node name="bookcaseWideFilled133" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled134" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled135" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 7.4, 0 )
+
+[node name="bookcaseFilled97" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 7.4, 0 )
+
+[node name="bookcaseFilled98" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 7.4, 0 )
+
+[node name="bookcaseFilled99" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 7.4, 0 )
+
+[node name="bookcaseWideFilled136" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled137" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 9.3, 0 )
+
+[node name="bookcaseFilled100" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled138" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled139" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 7.4, 0 )
+
+[node name="bookcaseWideFilled140" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 9.3, 0 )
+
+[node name="bookcaseWideFilled141" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 7.4, 0 )
+
+[node name="bookcaseFilled101" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled142" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled143" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 9.3, 0 )
+
+[node name="bookcaseFilled102" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled144" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled145" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 7.4, 0 )
+
+[node name="bookcaseFilled103" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 7.4, 0 )
+
+[node name="bookcaseFilled104" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled146" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 9.3, 0 )
+
+[node name="bookcaseWideFilled147" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 9.3, 0 )
+
+[node name="bookcaseWideFilled148" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled149" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled150" parent="Decorations/Props/Bookcases2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 9.3, 0 )
+
+[node name="bookcaseFilled105" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 9.3, 0 )
+
+[node name="bookcaseFilled106" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 9.3, 0 )
+
+[node name="bookcaseFilled107" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 9.3, 0 )
+
+[node name="bookcaseFilled108" parent="Decorations/Props/Bookcases2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 9.3, 0 )
+
+[node name="Bookcases3" type="Spatial" parent="Decorations/Props"]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 26.2, 0, 0.1 )
+
+[node name="bookcaseWideFilled" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 0, 0 )
+
+[node name="bookcaseWideFilled2" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0, 0 )
+
+[node name="bookcaseWideFilled3" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0 )
+
+[node name="bookcaseWideFilled5" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 0, 0 )
+
+[node name="bookcaseWideFilled6" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0 )
+
+[node name="bookcaseFilled" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 0, 0 )
+
+[node name="bookcaseFilled2" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 0, 0 )
+
+[node name="bookcaseFilled3" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, 0 )
+
+[node name="bookcaseFilled4" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 0, 0 )
+
+[node name="bookcaseWideFilled4" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 1.9, 0 )
+
+[node name="bookcaseWideFilled7" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.9, 0 )
+
+[node name="bookcaseWideFilled8" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1.9, 0 )
+
+[node name="bookcaseWideFilled9" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 1.9, 0 )
+
+[node name="bookcaseWideFilled10" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 1.9, 0 )
+
+[node name="bookcaseFilled5" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 1.9, 0 )
+
+[node name="bookcaseFilled6" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 1.9, 0 )
+
+[node name="bookcaseFilled7" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 1.9, 0 )
+
+[node name="bookcaseFilled8" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 1.9, 0 )
+
+[node name="bookcaseWideFilled11" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 0, 0 )
+
+[node name="bookcaseWideFilled12" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 0, 0 )
+
+[node name="bookcaseWideFilled13" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 0, 0 )
+
+[node name="bookcaseWideFilled14" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 0, 0 )
+
+[node name="bookcaseWideFilled15" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 0, 0 )
+
+[node name="bookcaseFilled9" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 0, 0 )
+
+[node name="bookcaseFilled10" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 0, 0 )
+
+[node name="bookcaseFilled11" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 0, 0 )
+
+[node name="bookcaseFilled12" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 0, 0 )
+
+[node name="bookcaseWideFilled16" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 1.9, 0 )
+
+[node name="bookcaseWideFilled17" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 1.9, 0 )
+
+[node name="bookcaseWideFilled18" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled19" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 1.9, 0 )
+
+[node name="bookcaseWideFilled20" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 1.9, 0 )
+
+[node name="bookcaseFilled13" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 1.9, 0 )
+
+[node name="bookcaseFilled14" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 1.9, 0 )
+
+[node name="bookcaseFilled15" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 1.9, 0 )
+
+[node name="bookcaseFilled16" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 1.9, 0 )
+
+[node name="bookcaseWideFilled21" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 0, 0 )
+
+[node name="bookcaseWideFilled22" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 0, 0 )
+
+[node name="bookcaseWideFilled23" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0 )
+
+[node name="bookcaseWideFilled24" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0 )
+
+[node name="bookcaseWideFilled25" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 0, 0 )
+
+[node name="bookcaseFilled17" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 0, 0 )
+
+[node name="bookcaseFilled18" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 0, 0 )
+
+[node name="bookcaseFilled19" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 0, 0 )
+
+[node name="bookcaseFilled20" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 0, 0 )
+
+[node name="bookcaseWideFilled26" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 1.9, 0 )
+
+[node name="bookcaseWideFilled27" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 1.9, 0 )
+
+[node name="bookcaseWideFilled28" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled29" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled30" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 1.9, 0 )
+
+[node name="bookcaseFilled21" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 1.9, 0 )
+
+[node name="bookcaseFilled22" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 1.9, 0 )
+
+[node name="bookcaseFilled23" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.9, 0 )
+
+[node name="bookcaseFilled24" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled31" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 0, 0 )
+
+[node name="bookcaseWideFilled32" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 0, 0 )
+
+[node name="bookcaseWideFilled33" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0 )
+
+[node name="bookcaseWideFilled34" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0 )
+
+[node name="bookcaseWideFilled35" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 0, 0 )
+
+[node name="bookcaseFilled25" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 0, 0 )
+
+[node name="bookcaseFilled26" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 0, 0 )
+
+[node name="bookcaseFilled27" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 0, 0 )
+
+[node name="bookcaseWideFilled41" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled42" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 1.9, 0 )
+
+[node name="bookcaseFilled33" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled43" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 0 )
+
+[node name="bookcaseWideFilled44" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0, 0 )
+
+[node name="bookcaseWideFilled49" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 1.9, 0 )
+
+[node name="bookcaseWideFilled50" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0 )
+
+[node name="bookcaseFilled34" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 0, 0 )
+
+[node name="bookcaseWideFilled45" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled46" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 1.9, 0 )
+
+[node name="bookcaseFilled35" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled47" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 0, 0 )
+
+[node name="bookcaseWideFilled48" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0, 0 )
+
+[node name="bookcaseFilled36" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 0, 0 )
+
+[node name="bookcaseFilled28" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 0, 0 )
+
+[node name="bookcaseWideFilled36" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 1.9, 0 )
+
+[node name="bookcaseWideFilled37" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 1.9, 0 )
+
+[node name="bookcaseWideFilled38" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 1.9, 0 )
+
+[node name="bookcaseWideFilled39" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 1.9, 0 )
+
+[node name="bookcaseWideFilled40" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 1.9, 0 )
+
+[node name="bookcaseFilled29" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 1.9, 0 )
+
+[node name="bookcaseFilled30" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 1.9, 0 )
+
+[node name="bookcaseFilled31" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 1.9, 0 )
+
+[node name="bookcaseFilled32" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 1.9, 0 )
+
+[node name="bookcaseWideFilled51" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 3.8, 0 )
+
+[node name="bookcaseWideFilled52" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.8, 0 )
+
+[node name="bookcaseWideFilled53" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3.8, 0 )
+
+[node name="bookcaseWideFilled54" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 3.8, 0 )
+
+[node name="bookcaseWideFilled55" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 3.8, 0 )
+
+[node name="bookcaseFilled37" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 3.8, 0 )
+
+[node name="bookcaseFilled38" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 3.8, 0 )
+
+[node name="bookcaseFilled39" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 3.8, 0 )
+
+[node name="bookcaseFilled40" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 3.8, 0 )
+
+[node name="bookcaseWideFilled56" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 5.7, 0 )
+
+[node name="bookcaseWideFilled57" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 5.7, 0 )
+
+[node name="bookcaseWideFilled58" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5.7, 0 )
+
+[node name="bookcaseWideFilled59" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 5.7, 0 )
+
+[node name="bookcaseWideFilled60" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 5.7, 0 )
+
+[node name="bookcaseFilled41" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 5.7, 0 )
+
+[node name="bookcaseFilled42" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 5.7, 0 )
+
+[node name="bookcaseFilled43" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 5.7, 0 )
+
+[node name="bookcaseFilled44" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 5.7, 0 )
+
+[node name="bookcaseWideFilled61" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 3.8, 0 )
+
+[node name="bookcaseWideFilled62" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 3.8, 0 )
+
+[node name="bookcaseWideFilled63" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled64" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 3.8, 0 )
+
+[node name="bookcaseWideFilled65" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 3.8, 0 )
+
+[node name="bookcaseFilled45" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 3.8, 0 )
+
+[node name="bookcaseFilled46" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 3.8, 0 )
+
+[node name="bookcaseFilled47" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 3.8, 0 )
+
+[node name="bookcaseFilled48" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 3.8, 0 )
+
+[node name="bookcaseWideFilled66" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 5.7, 0 )
+
+[node name="bookcaseWideFilled67" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 5.7, 0 )
+
+[node name="bookcaseWideFilled68" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled69" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 5.7, 0 )
+
+[node name="bookcaseWideFilled70" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 5.7, 0 )
+
+[node name="bookcaseFilled49" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 5.7, 0 )
+
+[node name="bookcaseFilled50" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 5.7, 0 )
+
+[node name="bookcaseFilled51" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 5.7, 0 )
+
+[node name="bookcaseFilled52" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 5.7, 0 )
+
+[node name="bookcaseWideFilled71" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 3.8, 0 )
+
+[node name="bookcaseWideFilled72" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 3.8, 0 )
+
+[node name="bookcaseWideFilled73" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled74" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled75" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 3.8, 0 )
+
+[node name="bookcaseFilled53" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 3.8, 0 )
+
+[node name="bookcaseFilled54" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 3.8, 0 )
+
+[node name="bookcaseFilled55" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 3.8, 0 )
+
+[node name="bookcaseFilled56" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled76" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 5.7, 0 )
+
+[node name="bookcaseWideFilled77" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 5.7, 0 )
+
+[node name="bookcaseWideFilled78" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled79" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled80" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 5.7, 0 )
+
+[node name="bookcaseFilled57" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 5.7, 0 )
+
+[node name="bookcaseFilled58" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 5.7, 0 )
+
+[node name="bookcaseFilled59" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 5.7, 0 )
+
+[node name="bookcaseFilled60" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled81" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 3.8, 0 )
+
+[node name="bookcaseWideFilled82" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 3.8, 0 )
+
+[node name="bookcaseWideFilled83" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3.8, 0 )
+
+[node name="bookcaseWideFilled84" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled85" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 3.8, 0 )
+
+[node name="bookcaseFilled61" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 3.8, 0 )
+
+[node name="bookcaseFilled62" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 3.8, 0 )
+
+[node name="bookcaseFilled63" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 3.8, 0 )
+
+[node name="bookcaseWideFilled86" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled87" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 5.7, 0 )
+
+[node name="bookcaseFilled64" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled88" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled89" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 3.8, 0 )
+
+[node name="bookcaseWideFilled90" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 5.7, 0 )
+
+[node name="bookcaseWideFilled91" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 3.8, 0 )
+
+[node name="bookcaseFilled65" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 3.8, 0 )
+
+[node name="bookcaseWideFilled92" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled93" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 5.7, 0 )
+
+[node name="bookcaseFilled66" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled94" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled95" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 3.8, 0 )
+
+[node name="bookcaseFilled67" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 3.8, 0 )
+
+[node name="bookcaseFilled68" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 3.8, 0 )
+
+[node name="bookcaseWideFilled96" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 5.7, 0 )
+
+[node name="bookcaseWideFilled97" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 5.7, 0 )
+
+[node name="bookcaseWideFilled98" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.7, 0 )
+
+[node name="bookcaseWideFilled99" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 5.7, 0 )
+
+[node name="bookcaseWideFilled100" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 5.7, 0 )
+
+[node name="bookcaseFilled69" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 5.7, 0 )
+
+[node name="bookcaseFilled70" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 5.7, 0 )
+
+[node name="bookcaseFilled71" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 5.7, 0 )
+
+[node name="bookcaseFilled72" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 5.7, 0 )
+
+[node name="bookcaseWideFilled101" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 7.4, 0 )
+
+[node name="bookcaseWideFilled102" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 7.4, 0 )
+
+[node name="bookcaseWideFilled103" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 7.4, 0 )
+
+[node name="bookcaseWideFilled104" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 7.4, 0 )
+
+[node name="bookcaseWideFilled105" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 7.4, 0 )
+
+[node name="bookcaseFilled73" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 7.4, 0 )
+
+[node name="bookcaseFilled74" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 7.4, 0 )
+
+[node name="bookcaseFilled75" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 7.4, 0 )
+
+[node name="bookcaseFilled76" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 7.4, 0 )
+
+[node name="bookcaseWideFilled106" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9, 9.3, 0 )
+
+[node name="bookcaseWideFilled107" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 9.3, 0 )
+
+[node name="bookcaseWideFilled108" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 9.3, 0 )
+
+[node name="bookcaseWideFilled109" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 9.3, 0 )
+
+[node name="bookcaseWideFilled110" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 9.3, 0 )
+
+[node name="bookcaseFilled77" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.48, 9.3, 0 )
+
+[node name="bookcaseFilled78" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 9.3, 0 )
+
+[node name="bookcaseFilled79" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 9.3, 0 )
+
+[node name="bookcaseFilled80" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.65, 9.3, 0 )
+
+[node name="bookcaseWideFilled111" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 7.4, 0 )
+
+[node name="bookcaseWideFilled112" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 7.4, 0 )
+
+[node name="bookcaseWideFilled113" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled114" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 7.4, 0 )
+
+[node name="bookcaseWideFilled115" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 7.4, 0 )
+
+[node name="bookcaseFilled81" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 7.4, 0 )
+
+[node name="bookcaseFilled82" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 7.4, 0 )
+
+[node name="bookcaseFilled83" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 7.4, 0 )
+
+[node name="bookcaseFilled84" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 7.4, 0 )
+
+[node name="bookcaseWideFilled116" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4, 9.3, 0 )
+
+[node name="bookcaseWideFilled117" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3, 9.3, 0 )
+
+[node name="bookcaseWideFilled118" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled119" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.55, 9.3, 0 )
+
+[node name="bookcaseWideFilled120" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 9.3, 0 )
+
+[node name="bookcaseFilled85" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.98, 9.3, 0 )
+
+[node name="bookcaseFilled86" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.83, 9.3, 0 )
+
+[node name="bookcaseFilled87" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 9.3, 0 )
+
+[node name="bookcaseFilled88" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.15, 9.3, 0 )
+
+[node name="bookcaseWideFilled121" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 7.4, 0 )
+
+[node name="bookcaseWideFilled122" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 7.4, 0 )
+
+[node name="bookcaseWideFilled123" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled124" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled125" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 7.4, 0 )
+
+[node name="bookcaseFilled89" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 7.4, 0 )
+
+[node name="bookcaseFilled90" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 7.4, 0 )
+
+[node name="bookcaseFilled91" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 7.4, 0 )
+
+[node name="bookcaseFilled92" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled126" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 9.3, 0 )
+
+[node name="bookcaseWideFilled127" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 9.3, 0 )
+
+[node name="bookcaseWideFilled128" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled129" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled130" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 9.3, 0 )
+
+[node name="bookcaseFilled93" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 9.3, 0 )
+
+[node name="bookcaseFilled94" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 9.3, 0 )
+
+[node name="bookcaseFilled95" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 9.3, 0 )
+
+[node name="bookcaseFilled96" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled131" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 7.4, 0 )
+
+[node name="bookcaseWideFilled132" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 7.4, 0 )
+
+[node name="bookcaseWideFilled133" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 7.4, 0 )
+
+[node name="bookcaseWideFilled134" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled135" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 7.4, 0 )
+
+[node name="bookcaseFilled97" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 7.4, 0 )
+
+[node name="bookcaseFilled98" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 7.4, 0 )
+
+[node name="bookcaseFilled99" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 7.4, 0 )
+
+[node name="bookcaseWideFilled136" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled137" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 9.3, 0 )
+
+[node name="bookcaseFilled100" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled138" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled139" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 7.4, 0 )
+
+[node name="bookcaseWideFilled140" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 9.3, 0 )
+
+[node name="bookcaseWideFilled141" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 7.4, 0 )
+
+[node name="bookcaseFilled101" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 7.4, 0 )
+
+[node name="bookcaseWideFilled142" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 9.3, 0 )
+
+[node name="bookcaseWideFilled143" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 9.3, 0 )
+
+[node name="bookcaseFilled102" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled144" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled145" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 7.4, 0 )
+
+[node name="bookcaseFilled103" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.45, 7.4, 0 )
+
+[node name="bookcaseFilled104" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 7.4, 0 )
+
+[node name="bookcaseWideFilled146" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6, 9.3, 0 )
+
+[node name="bookcaseWideFilled147" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7, 9.3, 0 )
+
+[node name="bookcaseWideFilled148" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 9.3, 0 )
+
+[node name="bookcaseWideFilled149" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 9.3, 0 )
+
+[node name="bookcaseWideFilled150" parent="Decorations/Props/Bookcases3" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.75, 9.3, 0 )
+
+[node name="bookcaseFilled105" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02, 9.3, 0 )
+
+[node name="bookcaseFilled106" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.17, 9.3, 0 )
+
+[node name="bookcaseFilled107" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 9.3, 0 )
+
+[node name="bookcaseFilled108" parent="Decorations/Props/Bookcases3" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85, 9.3, 0 )

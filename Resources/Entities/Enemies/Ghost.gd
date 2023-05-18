@@ -156,10 +156,11 @@ func _get_eye_material(state) -> SpatialMaterial:
 	return mat
 
 func _update_mesh(state) -> void:
-	$Body/MainBody.mesh.material = _get_body_material(state)
-	var eye_material = _get_eye_material(state)
-	$Body/Eyes/LeftEye.mesh.material = eye_material
-	$Body/Eyes/RightEye.mesh.material = eye_material
+	pass
+#	$Body/MainBody.mesh.material = _get_body_material(state)
+#	var eye_material = _get_eye_material(state)
+#	$Body/Eyes/LeftEye.mesh.material = eye_material
+#	$Body/Eyes/RightEye.mesh.material = eye_material
 
 func _reached_target(target: Vector3) -> bool:
 	return (global_translation.distance_to(target) < 3)
@@ -215,8 +216,9 @@ func _check_status() -> bool:
 func _death():
 	is_alive = false
 	
-	anim_player.play("Death")
-	yield(anim_player, "animation_finished")
+	if anim_player:
+		anim_player.play("Death")
+		yield(anim_player, "animation_finished")
 	
 	emit_signal("ghost_death")
 	queue_free()

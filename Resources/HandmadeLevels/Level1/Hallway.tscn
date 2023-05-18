@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Processed/Objects/Tiles/BrickB/FloorTile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Processed/Objects/Walls/WallSectionDecorated.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Processed/Objects/Walls/WallSectionTorch.tscn" type="PackedScene" id=3]
+
+[node name="Hallway" type="Spatial"]
+
+[node name="Floor" type="Spatial" parent="."]
+
+[node name="FloorTile" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 0 )
+
+[node name="FloorTile2" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 0 )
+
+[node name="Ceiling" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.1, 0, 125, 0 )
+
+[node name="FloorTile" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 90, 0, 0 )
+
+[node name="FloorTile2" parent="Ceiling" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -90, 0, 0 )
+
+[node name="Walls" type="Spatial" parent="."]
+
+[node name="Wall1" type="Spatial" parent="Walls"]
+
+[node name="WallSectionDecorated" parent="Walls/Wall1" instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 90 )
+
+[node name="WallSectionDecorated2" parent="Walls/Wall1" instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 90 )
+
+[node name="WallSectionTorch" parent="Walls/Wall1" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 90 )
+
+[node name="Wall2" type="Spatial" parent="Walls"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+
+[node name="WallSectionDecorated" parent="Walls/Wall2" instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 120, 0, 90 )
+
+[node name="WallSectionDecorated2" parent="Walls/Wall2" instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, -120, 0, 90 )
+
+[node name="WallSectionTorch" parent="Walls/Wall2" instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 90 )
