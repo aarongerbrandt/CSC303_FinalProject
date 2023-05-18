@@ -49,7 +49,7 @@ func stop_rooms(spread_magnitude: float) -> Array:
 
 # Given an array of points, creates bridges from one point to the next
 #		i.e. [p1, p2, p3] creates a bridge from p1 to p2, and p2 to p3
-func add_bridges(points: Array) -> void:
+func add_bridges2(points: Array) -> void:
 #	print(points)
 	for i in range(points.size() - 1):
 		var p1 = points[i]
@@ -70,3 +70,41 @@ func add_bridges(points: Array) -> void:
 				bridge.init(p1, p2)
 			else:
 				pass #print("%s already had: %s" % [preexisting_connections, p2])
+
+func add_bridges():
+	for room in $Rooms.get_children():
+		_find_connection(room)
+
+func _find_connection(room: Room1) -> bool:
+	var room_entrances = []
+	var other_entrances = []
+	for node in get_tree().get_nodes_in_group("open_entrances"):
+		if room.is_a_parent_of(node):
+			room_entrances.append(node)
+		else:
+			other_entrances.append(node)
+	
+	for p1 in room_entrances:
+		p1 = p1 as Position3D
+		for p2 in other_entrances:
+			p2 = p2 as Position3D
+			if _try_connect(p1.global_translation, p2.global_translation):
+				p1.remove_from_group("open_entrances")
+				p2.remove_from_group("open_entrances")
+				
+				return true
+	return false
+
+func _try_connect(p1: Vector3, p2: Vector3) -> bool:
+	var direct_space = get_world().direct_space_state
+	var collision = direct_space.intersect_ray(p1, p2)
+	
+	if collision:
+		print(collision.collider)
+		
+		return false
+	else:
+		var bridge = Bridge.instance()
+		$Bridges.add_child(bridge)
+		bridge.init(p1, p2)
+		return true

@@ -16,6 +16,7 @@ number_of_rooms = 3
 
 [node name="Ghost" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.21693, -21.3563 )
+visible = false
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 

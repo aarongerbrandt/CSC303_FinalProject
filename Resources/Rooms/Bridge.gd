@@ -11,10 +11,7 @@ var length: float
 
 const BridgeSegment = preload("res://Resources/DungeonSegments/BridgeSegment.tscn")
 
-# TODO: Might be being called twice, just with p1 and p2 switched
 func init(point_one: Vector3, point_two: Vector3) -> void:
-#	_create_bridge_materials()
-	
 	p1 = point_one
 	p2 = point_two
 	
@@ -22,7 +19,6 @@ func init(point_one: Vector3, point_two: Vector3) -> void:
 	look_at_from_position(midpoint, p2, Vector3.UP)
 	
 	length = p1.distance_to(p2)
-#	$MeshInstance.mesh.size = Vector3(bridge_width, bridge_height, length)
 	
 	_place_segments()
 

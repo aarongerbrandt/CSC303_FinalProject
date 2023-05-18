@@ -3,7 +3,7 @@ extends Spatial
 export(float) var time_to_room_stop = 10
 export(int) var number_of_rooms = 25
 export(int) var room_placement_radius = 300
-export(float) var spread_magnitude = 2
+export(float) var spread_magnitude = 4
 
 signal level_generated(starting_coords)
 
@@ -46,7 +46,8 @@ func generate():
 				connected_points.append(path.get_point_position(cp))
 			for cp in path.get_point_connections(c):
 				connected_points.append(path.get_point_position(cp))
-			room_generator.add_bridges(connected_points)
+#			room_generator.add_bridges(connected_points)
+	room_generator.add_bridges()
 	ready = true
 
 func _place_room(room_position: Vector3) -> void:
