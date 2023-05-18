@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Resources/Entities/Player.gd" type="Script" id=1]
 
@@ -6,9 +6,43 @@
 radius = 10.0
 height = 20.0
 
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 1, 1, 30 )
+
 [sub_resource type="CapsuleMesh" id=2]
 radius = 10.0
 mid_height = 20.0
+
+[sub_resource type="Animation" id=4]
+resource_name = "GunShoot"
+length = 0.08
+tracks/0/type = "value"
+tracks/0/path = NodePath("Head/Camera/Hand/MeshInstance:translation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0288631, 0.0799377 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 3.5 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Head/Camera/Hand/MeshInstance:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
 
 [node name="Player" type="KinematicBody"]
 collision_mask = 4
@@ -22,8 +56,24 @@ shape = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 0 )
 
 [node name="Camera" type="Camera" parent="Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.4 )
 far = 8192.0
+
+[node name="RayCast" type="RayCast" parent="Head/Camera"]
+enabled = true
+cast_to = Vector3( 0, 0, -200 )
+collision_mask = 7
+
+[node name="Hand" type="Spatial" parent="Head/Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9, -3.3, -11.8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Head/Camera/Hand"]
+mesh = SubResource( 3 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
 mesh = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/GunShoot = SubResource( 4 )
+anims/RESET = SubResource( 5 )

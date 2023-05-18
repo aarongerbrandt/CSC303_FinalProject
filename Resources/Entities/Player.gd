@@ -4,24 +4,32 @@ export var base_speed = 100
 export var acceleration = 75
 export var gravity = 400
 export var jump_speed = 150
-export var sprint_modifier = 1.7
 
-export var sensitivity = .2
-
+const sensitivity = .2
+const sprint_modifier = 1.7
 const max_angle = 90
 const min_angle = -80
 
 var look_rot = Vector3.ZERO
 var move_dir = Vector3.ZERO
-
 var velocity = Vector3.ZERO
 
+const Burst = preload("res://Resources/Effects/Burst.tscn")
+
 onready var head = $Head as Spatial
+onready var animation_player = $AnimationPlayer as AnimationPlayer
+onready var camera = $Head/Camera as Camera
+onready var raycast = $Head/Camera/RayCast as RayCast
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(delta):
+	fire()
+	
+	_check_for_movement(delta)
+
+func _check_for_movement(delta):
 	head.rotation_degrees.x = look_rot.x
 	rotation_degrees.y = look_rot.y
 	
@@ -48,3 +56,20 @@ func _input(event):
 		look_rot.x -= (event.relative.y * sensitivity)
 		look_rot.y -= (event.relative.x * sensitivity)
 		look_rot.x = clamp(look_rot.x, min_angle, max_angle)
+
+func fire():
+	if Input.is_action_pressed("player_action"):
+		if !animation_player.is_playing():
+			if raycast.is_colliding():
+				var burst = Burst.instance()
+				add_child(burst)
+				var hit_pos = raycast.get_collision_point()
+				burst.init(hit_pos)
+				
+				var object_hit = raycast.get_collider()
+				print("Hit: %s" % object_hit)
+				if object_hit.is_in_group("enemy"):
+					object_hit.health -= 50
+		animation_player.play("GunShoot")
+	else:
+		animation_player.stop()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Resources/Entities/Enemies/Ghost.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Custom/Entities/GhostEyes.tres" type="SphereMesh" id=2]
@@ -34,7 +34,78 @@ albedo_color = Color( 0.921569, 0.494118, 0.494118, 0.368627 )
 material = SubResource( 7 )
 radius = 34.945
 
-[node name="Ghost" type="KinematicBody"]
+[sub_resource type="Animation" id=18]
+resource_name = "Death"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Body/MainBody:mesh:material:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.858824, 0.941176, 0.972549, 0.8 ), Color( 0.858824, 0.941176, 0.972549, 0.8 ), Color( 0.858824, 0.941176, 0.972549, 0.4 ), Color( 0.858824, 0.941176, 0.972549, 0.2 ), Color( 0.858824, 0.941176, 0.972549, 0 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Body/MainBody:mesh:material:albedo_color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0.858824, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Body/MainBody:mesh:material:albedo_color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0.941176, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Body/MainBody:mesh:material:albedo_color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0.972549, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Body/MainBody:mesh:material:albedo_color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0.8, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Body/MainBody:mesh:material:albedo_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.858824, 0.941176, 0.972549, 0.8 ) ]
+}
+
+[node name="Ghost" type="KinematicBody" groups=["enemy"]]
 collision_layer = 2
 collision_mask = 0
 script = ExtResource( 1 )
@@ -72,6 +143,10 @@ visible = false
 mesh = SubResource( 11 )
 
 [node name="PickNewDirection" type="Timer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Death = SubResource( 18 )
+anims/RESET = SubResource( 19 )
 
 [connection signal="timeout" from="StateUpdate" to="." method="_on_StateUpdate_timeout"]
 [connection signal="timeout" from="PickNewDirection" to="." method="_on_PickNewDirection_timeout"]

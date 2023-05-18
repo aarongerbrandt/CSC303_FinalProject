@@ -1,6 +1,8 @@
 extends KinematicBody
 class_name Ghost
 
+signal ghost_death
+
 export(float) var base_speed := 75
 export(float) var chase_speed := 100
 export(float) var base_health := 50
@@ -69,15 +71,15 @@ const new_dir_time = 5
 var state = State.IDLE
 var player: KinematicBody
 var speed = base_speed
+var health = base_health
+var is_alive = true
 
 var _distance_to_player = INF
-var _can_see_player := false
 
 onready var _target_location = global_translation
-
 onready var body_mesh = $Body/MainBody.mesh as SphereMesh
-onready var _range = $Range.mesh as SphereMesh
 onready var new_dir_timer = $PickNewDirection as Timer
+onready var anim_player = $AnimationPlayer as AnimationPlayer
 
 enum State {
 	IDLE,
@@ -93,7 +95,8 @@ func init(target, position) -> void:
 	_pick_new_dir()
 
 func _physics_process(delta):
-	_move(delta)
+	if _check_status():
+		_move(delta)
 
 func _on_StateUpdate_timeout():
 	if player:
@@ -132,10 +135,7 @@ func _on_StateUpdate_timeout():
 	if _init_state != state:
 		_pick_new_dir()
 	
-	_range.radius = range_data[state]["distance"]
-
-func can_see_player() -> bool:
-	return false
+#	$Range.mesh.radius = range_data[state]["distance"]
 
 func _get_body_material(state) -> SpatialMaterial:
 	var material = SpatialMaterial.new()
@@ -172,6 +172,8 @@ func _move(delta: float):
 
 func _move_to(target_position: Vector3):
 	var move_dir = (target_position - global_translation).normalized()
+	# Dont try and move if youre at target point
+	# Otherwise they spazz out when they reach it
 	if _reached_target(target_position):
 		return
 	
@@ -203,3 +205,18 @@ func _pick_new_dir():
 	_target_location = target
 	
 	new_dir_timer.start(new_dir_time)
+
+func _check_status() -> bool:
+	if health <= 0 and is_alive:
+		_death()
+		return false
+	return true
+
+func _death():
+	is_alive = false
+	
+	anim_player.play("Death")
+	yield(anim_player, "animation_finished")
+	
+	emit_signal("ghost_death")
+	queue_free()

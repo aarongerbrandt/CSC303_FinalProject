@@ -6,7 +6,7 @@
 [ext_resource path="res://Resources/Entities/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Resources/GUI/Menus/EscapeMenu.tscn" type="PackedScene" id=6]
 
-[node name="TestLevel" type="Spatial" groups=["Enemies"]]
+[node name="TestLevel" type="Spatial"]
 script = ExtResource( 3 )
 
 [node name="LevelGenerator" parent="." instance=ExtResource( 2 )]
