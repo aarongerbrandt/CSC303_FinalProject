@@ -16,6 +16,7 @@ var velocity = Vector3.ZERO
 
 const Burst = preload("res://Resources/Effects/Burst.tscn")
 
+onready var gun = $Head/Camera/Hand/CorporealCannon
 onready var head = $Head as Spatial
 onready var animation_player = $AnimationPlayer as AnimationPlayer
 onready var camera = $Head/Camera as Camera
@@ -25,8 +26,6 @@ func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(delta):
-	fire()
-	
 	_check_for_movement(delta)
 
 func _check_for_movement(delta):
@@ -56,20 +55,3 @@ func _input(event):
 		look_rot.x -= (event.relative.y * sensitivity)
 		look_rot.y -= (event.relative.x * sensitivity)
 		look_rot.x = clamp(look_rot.x, min_angle, max_angle)
-
-func fire():
-	if Input.is_action_pressed("player_action"):
-		if !animation_player.is_playing():
-			if raycast.is_colliding():
-				var burst = Burst.instance()
-				add_child(burst)
-				var hit_pos = raycast.get_collision_point()
-				burst.init(hit_pos)
-				
-				var object_hit = raycast.get_collider()
-				print("Hit: %s" % object_hit)
-				if object_hit.is_in_group("enemy"):
-					object_hit.health -= 50
-		animation_player.play("GunShoot")
-	else:
-		animation_player.stop()

@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Imported/Tools/Guns/blasterI.dae" type="PackedScene" id=1]
+[ext_resource path="res://Resources/Weapons/CorporealCannon.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "shoot"
+length = 0.08
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.02, 0.08 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 2 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="ParticlesMaterial" id=3]
+direction = Vector3( 0, 0, -1 )
+spread = 0.0
+gravity = Vector3( 0, 0, -100 )
+initial_velocity = 200.0
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 1, 1, 0, 1 )
+emission_enabled = true
+emission = Color( 1, 1, 0, 1 )
+emission_energy = 0.5
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SphereMesh" id=5]
+material = SubResource( 4 )
+
+[node name="CorporealCannon" instance=ExtResource( 1 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="RayCast" type="RayCast" parent="." index="0"]
+visible = false
+enabled = true
+cast_to = Vector3( 0, 0, -300 )
+collision_mask = 7
+
+[node name="AnimationPlayer" parent="." index="2"]
+anims/RESET = SubResource( 2 )
+anims/shoot = SubResource( 1 )
+
+[node name="Muzzle" type="Position3D" parent="." index="3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -0.233333 )
+
+[node name="Bullets" type="Particles" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.243611 )
+emitting = false
+amount = 30
+lifetime = 30.0
+one_shot = true
+local_coords = false
+process_material = SubResource( 3 )
+draw_pass_1 = SubResource( 5 )

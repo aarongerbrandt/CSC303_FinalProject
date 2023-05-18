@@ -14,6 +14,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Resources/Rooms/BaseRoom.gd"
 }, {
+"base": "Spatial",
+"class": "CC_Bullet",
+"language": "GDScript",
+"path": "res://Resources/Weapons/Projectiles/CC_Bullet.gd"
+}, {
 "base": "Reference",
 "class": "Delaunator",
 "language": "GDScript",
@@ -46,6 +51,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Base_Room": "",
+"CC_Bullet": "",
 "Delaunator": "",
 "FreeLookCamera": "",
 "Ghost": "",

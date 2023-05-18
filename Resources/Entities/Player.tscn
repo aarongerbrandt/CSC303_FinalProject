@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Resources/Entities/Player.gd" type="Script" id=1]
+[ext_resource path="res://Resources/Weapons/CorporealCannon.tscn" type="PackedScene" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 10.0
@@ -16,6 +17,7 @@ mid_height = 20.0
 [sub_resource type="Animation" id=4]
 resource_name = "GunShoot"
 length = 0.08
+step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Head/Camera/Hand/MeshInstance:translation")
 tracks/0/interp = 2
@@ -27,6 +29,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 3.5 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Head/Camera/Hand/CorporealCannon:translation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.02, 0.08 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -1, 2.5 ), Vector3( 0, -1, 4.5 ), Vector3( 0, -1, 2.5 ) ]
 }
 
 [sub_resource type="Animation" id=5]
@@ -42,6 +56,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Head/Camera/Hand/CorporealCannon:translation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, -1, 2.5 ) ]
 }
 
 [node name="Player" type="KinematicBody"]
@@ -67,7 +93,12 @@ collision_mask = 7
 [node name="Hand" type="Spatial" parent="Head/Camera"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9, -3.3, -11.8 )
 
+[node name="CorporealCannon" parent="Head/Camera/Hand" instance=ExtResource( 2 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, -1, 2.5 )
+shoot_rate = 5.0
+
 [node name="MeshInstance" type="MeshInstance" parent="Head/Camera/Hand"]
+visible = false
 mesh = SubResource( 3 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
