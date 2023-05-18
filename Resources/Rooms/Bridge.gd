@@ -28,10 +28,10 @@ func init(point_one: Vector3, point_two: Vector3) -> void:
 
 func _place_segments(): # length of 35
 #	print("Placing segments!")
-	var segment_length = BridgeSegment.instance().dimensions.z
+	var segment_length = BridgeSegment.instance().dimensions.z * 0.9
 	var num_segments = ceil(length / segment_length)
 	
-	var stretched_segment_length = length / num_segments
+	var stretched_segment_length = ceil(length / num_segments)
 	var segment_scale = stretched_segment_length / segment_length
 	
 	for i in range(num_segments):

@@ -5,6 +5,8 @@ export(int) var number_of_rooms = 25
 export(int) var room_placement_radius = 300
 export(float) var spread_magnitude = 2
 
+signal level_generated(starting_coords)
+
 onready var room_generator = $RoomGenerator
 
 # const Delaunator = preload("res://Resources/Scripts/Delaunator.gd")
@@ -14,6 +16,8 @@ const Room1 = preload("res://Resources/Rooms/Room1.tscn")
 const BEGINNING_HEIGHT = 0
 const TILE_SIZE = 4
 
+var starting_coords = null
+var ready = false
 var points = []
 
 func clear():
@@ -22,12 +26,16 @@ func clear():
 
 func generate():
 	randomize()
+	ready = false
 	for i in range(number_of_rooms):
 		var room_position = Util.getRandom3DPointInCircle(room_placement_radius, TILE_SIZE)
 		_place_room(room_position)
 	
 	yield(get_tree().create_timer(time_to_room_stop), "timeout")
 	points = room_generator.stop_rooms(spread_magnitude)
+	
+	var player_pos = points[randi() % points.size()] + Vector3(0, 15, 0)
+	emit_signal("level_generated", player_pos)
 	
 	var path = _generate_MST()
 	
@@ -39,6 +47,7 @@ func generate():
 			for cp in path.get_point_connections(c):
 				connected_points.append(path.get_point_position(cp))
 			room_generator.add_bridges(connected_points)
+	ready = true
 
 func _place_room(room_position: Vector3) -> void:
 	room_generator.generate_room(room_position)

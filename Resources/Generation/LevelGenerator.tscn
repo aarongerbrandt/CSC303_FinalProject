@@ -9,6 +9,4 @@ time_to_room_stop = 3.0
 room_placement_radius = 1000
 
 [node name="RoomGenerator" parent="." instance=ExtResource( 2 )]
-height_variation = 500
-
-[node name="Lines" type="Spatial" parent="."]
+height_variation = 0

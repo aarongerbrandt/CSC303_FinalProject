@@ -4,6 +4,8 @@
 [ext_resource path="res://Assets/Processed/Objects/Tiles/BrickB/tileBrickB_large.tscn" type="PackedScene" id=2]
 
 [node name="RigidBody" type="RigidBody"]
+collision_layer = 4
+collision_mask = 0
 gravity_scale = 0.0
 custom_integrator = true
 contacts_reported = 4
@@ -26,6 +28,8 @@ transform = Transform( 15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0 )
 [node name="Floor" type="Spatial" parent="Room"]
 
 [node name="Tile" parent="Room/Floor" instance=ExtResource( 2 )]
+collision_layer = 4
+collision_mask = 0
 
 [node name="Tile2" parent="Room/Floor" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
